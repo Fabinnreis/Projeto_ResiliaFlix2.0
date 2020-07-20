@@ -2,8 +2,39 @@
     width: 200px;
     height: auto;
     margin: 10px;
+    cursor: pointer;
 }
 
+.hider{
+    position: absolute;
+    left:0;
+    right: 0;
+    height:100%;
+    z-index: 9;
+    background-color: black;
+}
+
+.fade-out {
+	-webkit-animation: fade-out 3s ease-out both;
+	        animation: fade-out 3s ease-out both;
+}
+
+ @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
   
   
   
