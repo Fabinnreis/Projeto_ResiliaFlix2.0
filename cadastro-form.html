@@ -62,43 +62,45 @@
                                             <!--Informações de segurança-->
                     <div id="infoSenha">
                         <!--Campo de senha-->
-                    <div class="form-group">
-                        <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                    </div>
-                    <!--Campo confirmação de senha-->
-                    <div class="form-group">
-                        <label for="retypePassword">Retype Password</label>
-                        <input type="password" class="form-control" id="retypePassword" placeholder="Password">
-                    </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                        <!--Campo confirmação de senha-->
+                        <div class="form-group">
+                            <label for="retypePassword">Retype Password</label>
+                            <input type="password" class="form-control" id="retypePassword" placeholder="Password">
+                        </div>
                     </div>
                                             <!--Informações de endereço-->
                     <div id="infoEndereco">
                         <!--Campo de endereço-->
-                    <div class="form-group">
-                        <label for="inputCep">Cep</label>
-                        <input type="text" class="form-control" id="inputCep" placeholder="Cep">
-                    </div><br><br>
-                    <div class="form-group">
-                        <label for="inputLogradouro">Logradouro</label>
-                        <input type="text" class="form-control" id="inputLogradouro" placeholder="Logradouro">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputComplemento">Complemento</label>
-                        <input type="text" class="form-control" id="inputComplemento" placeholder="Complemento">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputBairro">Bairro</label>
-                        <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputLocalidade">Localidade</label>
-                        <input type="text" class="form-control" id="inputLocalidade" placeholder="Localidade">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputUf">Uf</label>
-                        <input type="text" class="form-control" id="inputUf" placeholder="Uf">
-                    </div>
+                        <div class="form-group">
+                            <label for="inputCep">Cep</label>
+                            <input type="number" class="form-control" id="inputCep" placeholder="Cep">
+                        </div><br><br>
+                        <div id="userAdress">
+                            <div class="form-group">
+                                <label for="inputLogradouro">Logradouro</label>
+                                <input type="text" class="form-control" id="inputLogradouro" placeholder="Logradouro">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputComplemento">Complemento</label>
+                                <input type="text" class="form-control" id="inputComplemento" placeholder="Complemento">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputBairro">Bairro</label>
+                                <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLocalidade">Localidade</label>
+                                <input type="text" class="form-control" id="inputLocalidade" placeholder="Localidade">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputUf">Uf</label>
+                                <input type="text" class="form-control" id="inputUf" placeholder="Uf">
+                            </div>
+                        </div>
                     </div>
         
                     <!--Botão de envio-->
@@ -119,5 +121,12 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="srcs/models/EnderecoModel.js"></script>
+        <script src="srcs/models/UsuarioModel.js"></script>
+        <script src="srcs/views/EnderecoView.js"></script>
+        <script src="srcs/views/UsuarioView.js"></script>
+        <script src="srcs/Controllers/UsuarioController.js"></script>
+        <script src="srcs/Controllers/EnderecoController.js"></script>
+        <script src="srcs/helper/helper.js"></script>
 
     </html>

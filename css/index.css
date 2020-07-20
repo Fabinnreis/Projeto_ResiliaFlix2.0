@@ -80,6 +80,12 @@
     display: flex;
     justify-content: center;    
 }
+#userAdress{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5px;
+}
   
   
   
