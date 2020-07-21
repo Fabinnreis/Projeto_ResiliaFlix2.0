@@ -1,8 +1,25 @@
-let movieImg = document.querySelector (".movieImg");
 let moviePart = document.querySelector ("#moviePart");
+let movies = document.querySelectorAll (".movieImg");
+let searchField = document.querySelector ("#searchField");
+let nameMovie = document.querySelector ("#nameMovie");
 
-movieImg.addEventListener("click",() => {
-    let movieUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=982c7993&t=${titleMovie.value}`
+movies.forEach((film)=>{
+film.addEventListener("click", () => {
+    let filmName = film.id;
+    let queryString = "?" + filmName;
+    window.location.href = "filmes.html" + queryString;
+    })  
+})
 
-MovieController.generateMovie(movieUrl);    
-});
+searchField[1].addEventListener("click",() => {
+    let filmName = searchField[0].value;
+    let queryString = "?" + filmName;
+    window.location.href = "filmes.html" + queryString;
+})
+
+nameMovie.addEventListener("keypress",(event) => {
+    if (event.keyCode === 13) {
+        searchField[1].click();
+        event.preventDefault();
+    } 
+})

@@ -20,7 +20,7 @@ class Movie {
             director: this._director,
             actors: this._actors,
             plot: this._plot,
-            imdbRating: this._imdbRating
+            imdbRating: this._imdbRating,
         };
     }
 }
