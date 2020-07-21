@@ -12,6 +12,7 @@
     height:100%;
     z-index: 9;
     background-color: black;
+    display: flex;
 }
 
 .fade-out {
@@ -34,6 +35,16 @@
     100% {
       opacity: 0;
     }
+  }
+  #presentation{
+    width: 50%;
+  }
+  #presentation p{
+    color: white;
+  }
+
+  #userRegister{
+    width: 50%;
   }
 
 /* Formulário de Cadastro de Usuário*/
