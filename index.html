@@ -12,15 +12,16 @@
         </head>
 
 
-        <body class="">
+        <body>
 
             <header>
 
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand">ResiliaFlix Turbo</a>
-                    <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="fecthButton"disabled>Search</button>
+                    <form class="form-inline" id="searchField">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="button" id="btnSearch" disabled>Search</button>
+
                     </form>
                 </nav>
 
@@ -28,6 +29,7 @@
 
 
             <main>
+
 
                 <section class="d-flex flex-wrap justify-content-center position-relative" id="catalog">
 
@@ -120,20 +122,21 @@
                             </form>
                         </section>
                     </div>
-                    <img class="movieImg" src="imgs\about-time-poster.jpg">
-                    <img class="movieImg" src="imgs\annihilation-poster.jpg">
-                    <img class="movieImg" src="imgs\Avatar_poster.jpg">
-                    <img class="movieImg" src="imgs\frozen-2-poster.jpg">
-                    <img class="movieImg" src="imgs\grand_budapest_hotel_poster.jpg">
-                    <img class="movieImg" src="imgs\her-poster.jpg">
-                    <img class="movieImg" src="imgs\inception-poster.jpg">
-                    <img class="movieImg" src="imgs\Indiana_Jones_poster.jpg">
-                    <img class="movieImg" src="imgs\jaws-poster.jpg">
-                    <img class="movieImg" src="imgs\midsommar_poster.jpg">
-                    <img class="movieImg" src="imgs\Venom-poster.jpg">
-                    <img class="movieImg" src="imgs\wonder_poster.jpg">
-
-                </section>
+                  
+              <section class="d-flex flex-wrap justify-content-center" id="showcase">
+                    <img class="movieImg" src="imgs\about-time-poster.jpg" id="About_Time">
+                    <img class="movieImg" src="imgs\annihilation-poster.jpg" id="Annihilation">
+                    <img class="movieImg" src="imgs\Avatar_poster.jpg" id="Avatar">
+                    <img class="movieImg" src="imgs\frozen-2-poster.jpg" id="Frozen_II">
+                    <img class="movieImg" src="imgs\grand_budapest_hotel_poster.jpg" id="Grand_Budapest_Hotel">
+                    <img class="movieImg" src="imgs\her-poster.jpg" id="Her">
+                    <img class="movieImg" src="imgs\inception-poster.jpg" id="Inception">
+                    <img class="movieImg" src="imgs\Indiana_Jones_poster.jpg" id="Indiana_Jones">
+                    <img class="movieImg" src="imgs\jaws-poster.jpg" id="Jaws">
+                    <img class="movieImg" src="imgs\midsommar_poster.jpg" id="Midsommar">
+                    <img class="movieImg" src="imgs\Venom-poster.jpg" id="Venom">
+                    <img class="movieImg" src="imgs\wonder_poster.jpg" id="Wonder">
+              </section>
             </main>
 
 
@@ -157,4 +160,5 @@
         <script src="srcs/Controllers/UsuarioController.js"></script>
         <script src="srcs/Controllers/EnderecoController.js"></script>
         <script src="srcs/helper/helper.js"></script>
+        <script src="main.js"></script>
     </html>
