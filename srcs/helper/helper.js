@@ -10,7 +10,7 @@ let zipCodeField = document.querySelector("#cadastroUsu").elements[7];
 let submitButton = document.querySelector("#cadastroUsu").elements[13];
 let form = document.querySelector("#cadastroUsu");
 let blocker = document.querySelector("#blocker");
-let fecthButton = document.querySelector("#fecthButton");
+let fecthButton = document.querySelector("#btnSearch");
 let divForm = document.querySelector("#userRegister");
 
 let validacep = /^[0-9]{8}$/;
