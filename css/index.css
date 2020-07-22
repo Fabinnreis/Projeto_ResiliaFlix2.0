@@ -1,7 +1,26 @@
+#showcase {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .movieImg{
-    width: 200px;
+    width: 250px;
     height: auto;
     margin: 10px;
+    border: solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.infos {
+    text-align: center;
+    padding: 40px;
+}
+
+#poster {
+    width: 300px;
+    height: auto;
+    margin: 30px;
+    border-radius:15px;
 }
 
   
