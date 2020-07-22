@@ -13,4 +13,4 @@ class MovieView {
         <p id="imdbRating"><b>IMDB:</b> ${sendMovie.imdbRating}</p>
         </div>`;
     }
-}
+} 
