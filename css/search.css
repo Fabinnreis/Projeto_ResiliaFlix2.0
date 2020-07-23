@@ -1,0 +1,70 @@
+#sectionSearch {
+    margin: 2%
+}
+
+#formSearch {
+    display: flex;
+    width: 25%;
+    text-align: center;
+}
+
+#lastUp {
+    margin: 2% auto 2% auto;
+}
+
+#lastUp h3 {
+    padding: 10px;
+}
+
+#carouselImgWoman{
+    object-fit: cover;
+    object-position: 0 100%;
+    height: 350px;
+    width: 100%;
+}
+
+#carouselImgJoker{
+    object-fit: cover;
+    object-position: 0 65%;
+    height: 350px;
+    width: 100%;
+}
+
+#carouselImgBohemian{
+    object-fit: cover;
+    object-position: 0 30%;
+    height: 350px;
+    width: 100%;
+}
+
+#carouselImgGreatest{
+    object-fit: cover;
+    object-position: 0 55%;
+    height: 350px;
+    width: 100%;
+}
+
+#carouselImgFord{
+    object-fit: cover;
+    object-position: 0 46%;
+    height: 350px;
+    width: 100%;
+}
+
+#carouselImgUs{
+    object-fit: cover;
+    object-position: 0 85%;
+    height: 350px;
+    width: 100%;
+}
+
+#reqMovies {
+    margin: 2% 2% 2% 2%;
+    width: 40%;
+    padding: 10px;
+}
+
+#reqMovies button {
+    margin-top: 15px;
+}
+
