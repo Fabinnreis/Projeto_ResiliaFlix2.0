@@ -1,4 +1,4 @@
-class EnderecoController {
+class AdressController {
     constructor(){
         throw new Error("This class can't instantiate new objects!")
     }
@@ -11,8 +11,8 @@ class EnderecoController {
         zipCodeRequest.addEventListener("load", ()=>{
             if(zipCodeRequest.status == 200){
                 let reqObj = JSON.parse(zipCodeRequest.responseText);
-                let adress = new EnderecoModel(reqObj.cep, reqObj.logradouro, reqObj.complemento, reqObj.bairro, reqObj.localidade, reqObj.uf);
-                userAdress.innerHTML = EnderecoView.templateView(adress.retornaEndereco());
+                let adress = new AdressModel(reqObj.cep, reqObj.logradouro, reqObj.complemento, reqObj.bairro, reqObj.localidade, reqObj.uf);
+                userAdress.innerHTML = AdressView.templateView(adress.returnAdress());
             }
         });
 
