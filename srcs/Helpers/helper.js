@@ -10,7 +10,7 @@ let zipCodeField = document.querySelector("#cadastroUsu").elements[7];
 let submitButton = document.querySelector("#cadastroUsu").elements[13];
 let form = document.querySelector("#cadastroUsu");
 let blocker = document.querySelector("#blocker");
-let fecthButton = document.querySelector("#fecthButton");
+let fecthButton = document.querySelector("#btnSearch");
 let divForm = document.querySelector("#userRegister");
 
 let validacep = /^[0-9]{8}$/;
@@ -53,44 +53,4 @@ validateEmail.addEventListener("change", function(){
 });
 
 //bootstrapValidate('#inputNome', 'required:É necessário informar um nome');
-submitButton.addEventListener("click", function(){
-    let counter = 0;
-    for(let i=0; i< form.length;i++){
-        if((!form[i].classList.contains("is-invalid")) && (form[i].value != "")){
-            counter++;
-        }
-    }
-    
-    if(counter >= 13){
-        
-        setTimeout(function(){
-            form.classList.add("slide-out-bck-center");
-        },300);
-
-        setTimeout(function(){
-            divForm.removeChild(form);
-            let thanksMsg = document.createElement("p");
-            thanksMsg.innerText = "Thank you for registering! Enjoy our services!";
-            thanksMsg.classList.add("thanksMsg");
-            thanksMsg.classList.add("scale-in-center");
-            divForm.appendChild(thanksMsg);
-        },1300);
-
-        setTimeout(function(){
-            blocker.classList.add("fade-out");
-        },4000);
-        
-
-        setTimeout(function(){
-            document.querySelector("#catalog").removeChild(blocker);
-            fecthButton.classList.remove("btn-outline-danger");
-            fecthButton.classList.add("btn-outline-success");
-            fecthButton.disabled = false;
-        },7000);
-        
-        
-    }
-    console.log(counter);
-    counter = 0;
-});
 

@@ -48,18 +48,6 @@
     border-radius: 20px;
 }
 
-.infos {
-    text-align: center;
-    padding: 40px;
-}
-
-#poster {
-    width: 300px;
-    height: auto;
-    margin: 30px;
-    border-radius:15px;
-}
-
 .hider{
     position: absolute;
     left:0;
