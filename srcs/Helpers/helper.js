@@ -1,12 +1,8 @@
-//let userRegister = document.querySelector('#userRegister');
-//console.log(RegisterView.templateRegister);
-//userRegister.innerHTML = RegisterView.templateRegister;
-//console.log(userRegister);
 let email = document.querySelector("#cadastroUsu").elements[3];
 let validateEmail = document.querySelector("#cadastroUsu").elements[4];
-let password = document.querySelector("#cadastroUsu").elements[5];
-let validatePassword = document.querySelector("#cadastroUsu").elements[6];
-let zipCodeField = document.querySelector("#cadastroUsu").elements[7];
+let password = document.querySelector("#cadastroUsu").elements[11];
+let validatePassword = document.querySelector("#cadastroUsu").elements[12];
+let zipCodeField = document.querySelector("#cadastroUsu").elements[5];
 let submitButton = document.querySelector("#cadastroUsu").elements[13];
 let form = document.querySelector("#cadastroUsu");
 let blocker = document.querySelector("#blocker");
@@ -32,7 +28,7 @@ bootstrapValidate('#inputUf', 'alpha:You can only input alphabetic characters');
 zipCodeField.addEventListener("change",function(){
     if((zipCodeField.value.length > 7) && (validacep.test(zipCodeField.value))){
         let url = `https://viacep.com.br//ws/${zipCodeField.value}/json/`;
-        EnderecoController.fetchZipCode(url);
+        AdressController.fetchZipCode(url);
     }
 });
 
@@ -51,6 +47,4 @@ validateEmail.addEventListener("change", function(){
         email.focus();
     }
 });
-
-//bootstrapValidate('#inputNome', 'required:É necessário informar um nome');
 
