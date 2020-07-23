@@ -44,7 +44,8 @@
   }
 
   #userRegister{
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
   }
 
 /* Formulário de Cadastro de Usuário*/
@@ -97,7 +98,26 @@
   width: 100%;
   margin-bottom: 5px;
 }
+.carousel-indicators li{
+  border: 1px solid black;
+  color: black;
+  background-color: black;
+}
+#sec-controls{
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center;
+}
+#sec-controls li{
+  list-style: none;
+  width: 10%;
+  height: 30px;
+  text-align: center;
+}
+#send-form{
   
+}
   
   
   
