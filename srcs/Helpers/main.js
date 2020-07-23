@@ -1,5 +1,5 @@
 let moviePart = document.querySelector ("#moviePart");
-let movies = document.querySelectorAll (".movieImg");
+let movies = document.querySelectorAll (".overlayItems");
 let searchField = document.querySelector ("#searchField");
 let nameMovie = document.querySelector ("#nameMovie");
 
