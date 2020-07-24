@@ -1,4 +1,3 @@
-/* Efeito overlay */
 
 .cards {
     display: flex;
@@ -6,7 +5,6 @@
     margin: 8px;
     width: 19%;
     height: auto;
-    /*border-radius: 20px;*/
     position: relative;
     overflow: hidden;
 }
@@ -14,10 +12,7 @@
 .movieImg{
     width: 100%;
     height: 100%;
-
     cursor: pointer;
-    /*border: solid gray;
-    border-radius: 20px;*/
 }
 
 .overlayItems {
@@ -56,186 +51,10 @@
 
     
 }
-   
 
-    .infos {
-        text-align: center;
-        padding: 40px;
-    }
-/*essa parte aqui yo no sei*/
-/* 
 #showcase {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 
-#poster {
-    width: 300px;
-    height: auto;
-    margin: 30px;
-    border-radius:15px;
-}
-
-.hider{
-    position: absolute;
-    left:0;
-    right: 0;
-    height:100%;
-    z-index: 9;
-    background-color: black;
-}
-
-.thanksMsg{
-  color: green;
-  font-weight: bold;
-  font-size: 50px;
-  padding-top: 15%;
-}
-
-.fade-out {
-	-webkit-animation: fade-out 3s ease-out both;
-	        animation: fade-out 3s ease-out both;
-}
-
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.slide-out-bck-center {
-	-webkit-animation: slide-out-bck-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: slide-out-bck-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@-webkit-keyframes slide-out-bck-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(-1100px);
-            transform: translateZ(-1100px);
-    opacity: 0;
-  }
-}
-
-@keyframes slide-out-bck-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(-1100px);
-            transform: translateZ(-1100px);
-    opacity: 0;
-  }
-}
-
-.scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
- @-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  } 
-} */
-
-
-/* Formulário de Cadastro de Usuário*/
-/* #cadastroUsu{
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 70px;
-}
-#infos{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #778899;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
-}
-#infoSenha{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #778899;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
-}
-#infoEndereco{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #778899;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
-}
-.form-group{
-    margin-left: 30px;
-}
-#inputNome{
-    width: 200px;   
-}
-#inputSobrenome{
-    width: 350px;   
-} 
-#btnCadastroForm{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;  
-}
-#userAdress{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-#presentation p{
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-}
-
-#userRegister{
-  color: white;
-  text-align: center;
-} */

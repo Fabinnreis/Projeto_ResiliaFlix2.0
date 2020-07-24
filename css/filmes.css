@@ -1,0 +1,21 @@
+.infos {
+    text-align: center;
+    padding: 40px;
+}
+
+#poster {
+    width: 300px;
+    height: auto;
+    margin: 30px;
+}
+
+#divTrailer{
+    text-align: center;
+}
+  
+#trailerView{
+    width: 700px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+  
