@@ -7,7 +7,7 @@ class TrailerController {
         request.addEventListener("load",() => {
             let reqObj = JSON.parse (request.responseText);
             let trailerObj = new TrailerModel(reqObj.items[0].id.videoId);
-            printView.innerHTML = TrailerView.trailerTemplate(trailerObj.getNewTrailerObj());
+            printView.innerHTML += TrailerView.trailerTemplate(trailerObj.getNewTrailerObj());
         })
         request.send()
     }

@@ -11,7 +11,7 @@ class MovieController {
                                       reqObj.Year,
                                       reqObj.Runtime,
                                       reqObj.Genre,
-                                      reqObj.Director,
+                                      reqObj.reqObjDirector,
                                       reqObj.Actors,
                                       reqObj.Plot,
                                       reqObj.imdbRating,
