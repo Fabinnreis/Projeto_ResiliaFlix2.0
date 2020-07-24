@@ -1,5 +1,5 @@
 class Movie {
-    constructor(poster,title,year,runtime,genre,director,actors,plot,imdbRating) {
+    constructor(poster,title,year,runtime,genre,director,actors,plot,imdbRating,imdbVotes,awards) {
         this._poster = poster;
         this._title = title;
         this._year = year;
@@ -9,6 +9,8 @@ class Movie {
         this._actors = actors;
         this._plot = plot;
         this._imdbRating = imdbRating;
+        this._imdbVotes = imdbVotes;
+        this._awards = awards;
     }
     getMovie() {
         return {
@@ -21,6 +23,8 @@ class Movie {
             actors: this._actors,
             plot: this._plot,
             imdbRating: this._imdbRating,
+            imdbVotes: this._imdbVotes,
+            awards: this._awards
         };
     }
 }

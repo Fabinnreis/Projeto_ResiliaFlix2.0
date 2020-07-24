@@ -11,6 +11,8 @@ class MovieView {
         <p id="actors"><b>Actors:</b> ${sendMovie.actors}</p>
         <p id="plot"><b>Plot:</b> ${sendMovie.plot}</p>
         <p id="imdbRating"><b>IMDB:</b> ${sendMovie.imdbRating}</p>
+        <p id="imdbVotes"><b>Votes:</b> ${sendMovie.imdbVotes}</p>
+        <p id="awards"><b>Awards:</b> ${sendMovie.awards}</p>
         </div>`;
     }
 }
