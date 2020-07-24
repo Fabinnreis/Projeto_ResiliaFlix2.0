@@ -1,18 +1,31 @@
 class MovieView {
     static templateMovie(sendMovie) {
         return `
-        <div class="infos">
-        <img src="${sendMovie.poster}" id="poster">
-        <h2 id="title">${sendMovie.title}</h2>
-        <p id="year"><b>Year:</b> ${sendMovie.year}</p>
-        <p id="runtime"><b>Runtime:</b> ${sendMovie.runtime}</p>
-        <p id="genre"><b>Genre:</b> ${sendMovie.genre}</p>
-        <p id="director"><b>Director:</b> ${sendMovie.director}</p>
-        <p id="actors"><b>Actors:</b> ${sendMovie.actors}</p>
-        <p id="plot"><b>Plot:</b> ${sendMovie.plot}</p>
-        <p id="imdbRating"><b>IMDB:</b> ${sendMovie.imdbRating}</p>
-        <p id="imdbVotes"><b>Votes:</b> ${sendMovie.imdbVotes}</p>
-        <p id="awards"><b>Awards:</b> ${sendMovie.awards}</p>
+        <div id="mainInfoMovieDiv">
+            <div id="mainInfoMovie">
+                <h2 id="title">${sendMovie.title} (${sendMovie.year})</h2>
+                <p id="runtime"><b>Runtime:</b> ${sendMovie.runtime} | <b>Genre:</b> ${sendMovie.genre}</p>
+            </div>
+
+            <div id="movieRating">
+                <img src="../imgs/IMDb.png" id="imdb">
+                <p id="rating"><b>${sendMovie.imdbRating}</b><img src="../imgs/star.png" id="star"><br><span id="votes">${sendMovie.imdbVotes} votes</span></p>
+            </div>
+        </div>
+
+        <div id="movieContentDiv">
+
+            <img src="${sendMovie.poster}" id="poster">
+
+            <div id="movieContent">
+                <p id="plot" class="movieData"><b>Plot:</b> ${sendMovie.plot}</p>
+                <p id="actors" class="movieData"><b>Actors:</b> ${sendMovie.actors}</p>
+                <p id="director" class="movieData"><b>Director:</b> ${sendMovie.director}</p>
+                <p id="awards" class="movieData"><b>Awards:</b> ${sendMovie.awards}</p>
+
+            <div>
+        </div>
+        
         </div>`;
     }
 }
