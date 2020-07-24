@@ -1,33 +1,43 @@
-body {
-    font-family: 'News Cycle', sans-serif;
+#contacts {
+    margin: 5% 0% 5% 0%;
+}
+#cardIndiv {
+    display: flex;
+    margin: 1% 5% 1% 31%;
+    width: 35%;
+    border: solid lightgray 2px;
+    border-radius: 3px;
 }
 
-#cardContact {
-    margin: 5% 1% 5% 1%;
-    width: 200px;
+#cardIndiv div {
+    padding: 5px;
+    padding-left: 20px;
 }
 
-#cardResilia {
-    text-align: center;
-    margin: 3%;
-}
-
-sectionContact {
-    margin: 4% 6% 4% 6%;
-}
-
-cardContact {
-    margin: 2%;
+#photo {
+    width: 154px;
+    height: 154px;
+    object-fit: cover;
+    object-position: 0 0%;
 }
 
 .card-title {
     text-align: center;
-    padding: 5px;
-    padding-bottom: 15px;
+    padding: 2px;
+}
+
+#resilia {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#descr {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 #hyperlink {
     text-decoration: none;
     color: #000000;
 }
-
