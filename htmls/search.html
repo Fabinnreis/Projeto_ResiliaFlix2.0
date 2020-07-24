@@ -8,17 +8,9 @@
     <title>Search</title>
 </head>
 <body>
-    <section id="sectionSearch">
-        <p><b>Qual filme você deseja assistir?</b></p>
-        <div id="formSearch">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
-            <button class="btn btn-outline-danger" type="button" id="btnSearch">Search</button>
-        </div>
-    </section>
-
     <section id="lastUp">
         <h3>Last Updates</h3>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block" src="../imgs\wonder_woman_poster.jpg" alt="Primeiro Slide" id="carouselImgWoman">
@@ -50,17 +42,25 @@
           </div>
     </section>
 
+    <section>
+      <div id="formSearch">
+          <p><b>Type your favorite movie:</b></p>
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+          <button class="btn btn-outline-danger" type="button" id="btnSearch">Search</button>
+      </div>
+  </section>
+
     <section id="reqMovies">
         <h3>Request movies</h3>
         <p>Have a movie you'd like to see here? Let us know about it below.</p>
         <form>
             <div class="form-group">
               <label for="formGroupExampleInput">Suggestion 1</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title suggestion 1">
+              <input type="text" class="form-control" placeholder="Title suggestion 1" id="inputSuggestion">
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Suggestion 2</label>
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Title suggestion 2">
+              <input type="text" class="form-control" placeholder="Title suggestion 2" id="inputSuggestion">
               <button type="button" class="btn btn-primary">Submit Suggestion</button>
             </div>
           </form>
