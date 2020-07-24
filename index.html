@@ -5,6 +5,7 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/reset.css">
             <link rel="stylesheet" href="css/index.css">
             <link rel="shortcut icon" href="imgs/favIcon.png">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,184 +13,38 @@
         </head>
 
 
-        <body>
+        <body class="background">
 
             <header>
-
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand">ResiliaFlix Turbo</a>
-                    <form class="form-inline" id="searchField">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
-                    <button class="btn btn-outline-danger my-2 my-sm-0" type="button" id="btnSearch" disabled>Search</button>
-
-                    </form>
-                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">ResiliaFlix Turbo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Inscreva-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Busca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+                      </form>
+                    </div>
+                  </nav>
 
             </header>
-
-
-            <main>
-
-                <section class="d-flex flex-wrap justify-content-center position-relative" id="catalog">
-
-                    <div class="hider" id="blocker">
-                        <section id="presentation">
-                            <p>
-                                Welcome to ResiliaFlix Turbo. Here you will easily find information about any movie you are looking for. Are you interested in our services? Register quickly and enjoy the ultimate movie experience for free.
-                            </p>
-                        </section>
-                        <section id="userRegister">
-                            <form id="cadastroUsu" validate>
-                                <!--Informações pessoais-->
-                                <div id="infos">
-                                    <!--Campo Nome-->
-                                    <div class="form-group">
-                                        <label for="inputNome">Nome</label>
-                                        <input type="text" class="form-control" id="inputNome" placeholder="Nome">
-                                    </div>
-                                    <!--Campo sobrenome-->
-                                    <div class="form-group">
-                                        <label for="inputNome">Sobrenome</label>
-                                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
-                                    </div>
-                                    <!--Campo de RG-->
-                                    <div class="form-group">
-                                        <label for="inputRg">RG</label>
-                                        <input type="text" class="form-control" id="inputRg" placeholder="RG">
-                                    </div>
-                                    <!--Campo de email-->
-                                    <div class="form-group">
-                                        <label for="inputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                                            placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <!--Campo  confirmaçãode email-->
-                                    <div class="form-group">
-                                        <label for="inputConfirmaEmail">Confirm address</label>
-                                        <input type="email" class="form-control" id="inputConfirmaEmail" aria-describedby="emailHelp"
-                                            placeholder="Confirm email">
-                                    </div>
-                            
-                                </div>
-                                <!--Informações de segurança-->
-                                <div id="infoSenha">
-                                    <!--Campo de senha-->
-                                    <div class="form-group">
-                                        <label for="inputPassword">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                    </div>
-                                    <!--Campo confirmação de senha-->
-                                    <div class="form-group">
-                                        <label for="retypePassword">Retype Password</label>
-                                        <input type="password" class="form-control" id="retypePassword" placeholder="Password">
-                                    </div>
-                                </div>
-                                <!--Informações de endereço-->
-                                <div id="infoEndereco">
-                                    <!--Campo de endereço-->
-                                    <div class="form-group">
-                                        <label for="inputCep">Cep</label>
-                                        <input type="number" class="form-control" id="inputCep" placeholder="Cep">
-                                    </div><br><br>
-                                    <div id="userAdress">
-                                        <div class="form-group">
-                                            <label for="inputLogradouro">Logradouro</label>
-                                            <input type="text" class="form-control" id="inputLogradouro" placeholder="Logradouro">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputComplemento">Complemento</label>
-                                            <input type="text" class="form-control" id="inputComplemento" placeholder="Complemento">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputBairro">Bairro</label>
-                                            <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputLocalidade">Localidade</label>
-                                            <input type="text" class="form-control" id="inputLocalidade" placeholder="Localidade">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputUf">Uf</label>
-                                            <input type="text" class="form-control" id="inputUf" placeholder="Uf">
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <!--Botão de envio-->
-                                <div id="btnCadastroForm"><button type="button" class="btn btn-primary">Submit</button></div>
-                            </form>
-                        </section>
-                    </div>
-                  
-              <section class="d-flex flex-wrap justify-content-center" id="showcase">
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\about-time-poster.jpg" id="About_Time">
-                        <div class="overlayItems"><p>sinopse</p></div>                
-                    
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\annihilation-poster.jpg" id="Annihilation">
-                        <div class="overlayItems"><p>sinopse</p></div>
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\Avatar_poster.jpg" id="Avatar">
-                        <div class="overlayItems"><p>sinopse</p></div>
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\frozen-2-poster.jpg" id="Frozen_II">
-                        <div class="overlayItems"><p>sinopse</p></div>
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\grand_budapest_hotel_poster.jpg" id="Grand_Budapest_Hotel">
-                        <div class=" overlayItems"><p>sinopse</p></div>
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\her-poster.jpg" id="Her">
-                        <div class="overlayItems"><p>sinopse</p></div>
-                    </div>
-                    
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\inception-poster.jpg" id="Inception">
-                        <div class="overlayItems"><p>sinopse</p></div>                
-                    </div>
-                    
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\Indiana_Jones_poster.jpg" id="Indiana_Jones">
-                        <div class="overlayItems"><p>sinopse</p></div>
-                        
-                    </div>
-                    
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\jaws-poster.jpg" id="Jaws">
-                        <div class="overlayItems"><p>sinopse</p></div>
-
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\midsommar_poster.jpg" id="Midsommar">
-                        <div class="overlayItems"><p>sinopse</p></div>
-
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\Venom-poster.jpg" id="Venom">
-                        <div class="overlayItems"><p>sinopse</p></div>
-
-                    </div>
-
-                    <div class="cards">
-                        <img class="movieImg" src="imgs\wonder_poster.jpg" id="Wonder">
-                        <div class="overlayItems"><p>sinopse</p></div>
-
-                    </div>
-                </section>
-            </main>
 
 
             <footer class="fixed-bottom bg-light text-center">
