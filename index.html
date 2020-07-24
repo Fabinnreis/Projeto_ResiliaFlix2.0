@@ -5,51 +5,31 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
             <link rel="stylesheet" href="css/index.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
             <title>ResiliaFlix Turbo</title>
         </head>
 
 
-        <body class="background">
+        <body>
 
             <header>
-                <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
-                    <a class="navbar-brand" href="#">TurboFlix</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Sign in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Search</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                      </ul>
-                        <div class="containerForm">
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 backgroundSearch" type="search" placeholder="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <a class="nav-link" href="#" class="text-right">Login</a>
-                            </ul>
-                        </div>
-                    </div>
+
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand">ResiliaFlix Turbo</a>
+                    <form class="form-inline" id="searchField">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="btnSearch">Search</button>
+
+                    </form>
                 </nav>
+
             </header>
+
 
             <main>
 
+                  
               <section class="d-flex flex-wrap justify-content-center" id="showcase">
                 <div class="cards">
                     <img class="movieImg" src="imgs\about-time-poster.jpg" id="About_Time">
@@ -257,8 +237,9 @@
             </main>
 
 
-            <footer class="text-center footerColor">
-                <p class="h-50 d-inline-block">© COPYRIGHT 2020 by Fábio, Gabi, Ivan, Jéssica e Samantha</p>
+            <footer class="fixed-bottom bg-light text-center">
+
+                <p class="h-50 d-inline-block">© 2020 Infohub by Ivan, Gabi, Jéssica, Fábio e Samantha | This website is copyright free</p>
 
             </footer>
             
