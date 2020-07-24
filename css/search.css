@@ -86,3 +86,88 @@
     margin-top: 15px;
 }
 
+#trailerView{
+    width: 600px;
+    height: 500px;
+}
+
+#poster{
+    height: 500px;
+    width: auto;
+}
+
+#infoMovie{
+    text-align: center;
+}
+
+#mainInfoMovieDiv{
+    margin-top: 100px;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+#imdb{
+    width: 70px;
+    height: 70px;
+}
+
+#movieRating{
+    display: flex;
+}
+  
+#rating{
+    text-align: left;
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 0.7;
+}
+
+#votes{
+    font-size: 12px;
+}
+
+#star{
+    height: 15px;
+    width: 15px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#movieContentDiv{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#movieContent{
+    text-align: left;
+    font-size: 20px;
+    height: 444px;
+}
+
+.movieData{
+    max-width: 55ch;
+    height:23%;
+    padding-left: 40px;
+}
+
+#actors{
+    margin-top: 40px;
+}
+
+#director{
+    margin-top: 40px;
+}
+
+#awards{
+    margin-bottom: 0;
+}
+
+#trailer{
+    margin-top: 50px;
+}
+
