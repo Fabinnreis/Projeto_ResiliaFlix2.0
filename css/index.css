@@ -1,3 +1,49 @@
+.background {
+	-webkit-animation: color-change-3x 2s linear infinite alternate both;
+	        animation: color-change-3x 2s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+  0% {
+    background: #0b132b;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #1c2541;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+
+.navColor {
+  background-color: #293361;
+}
+
+.backgroundSearch {
+ background-color: #5e709ab0; 
+}
+
+.containerForm {
+  display: flex;
+}
+
+.footerColor {
+  background-color: #293361;
+  color: #97ccf9;
+  padding-top: 15px;
+}
+
 .cards {
   display: flex;
   justify-content: center;
@@ -52,4 +98,12 @@
 #showcase {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#btnSearch{
+  color: rgba(255,255,255,.5);
+}
+
+#btnSearch:hover{
+  color: whitesmoke;
 }
