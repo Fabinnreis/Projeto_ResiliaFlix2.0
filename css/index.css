@@ -41,6 +41,11 @@
   background-color: #293361;
 }
 
+.logo {
+  width: 40px;
+  height: auto;
+}
+
 .backgroundSearch {
  background-color: #5e709ab0; 
 }
@@ -107,6 +112,6 @@
 
 .footerColor {
   background-color: #293361;
-  color: whitesmoke;
+  color: #97ccf9;
   padding-top: 15px;
 }
