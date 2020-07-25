@@ -92,8 +92,9 @@
 }
 
 #trailerView{
-    width: 600px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
+    margin-top: 40px;
 }
 
 #poster{
@@ -238,4 +239,8 @@
   background-color: #293361;
   color: #97ccf9;
   padding-top: 15px;
+}
+
+#divTrailer{
+    text-align: center;
 }
