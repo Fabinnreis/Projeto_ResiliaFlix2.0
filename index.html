@@ -5,15 +5,18 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/reset.css">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
             <link rel="stylesheet" href="css/index.css">
-            <title>ResiliaFlix Turbo</title>
+            <title>TurboFlix</title>
         </head>
 
 
         <body class="background">
 
             <header>
+
                 <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
                     <a class="navbar-brand" href="#">TurboFlix</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,33 +26,48 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Sign in</a>
+                          <a class="nav-link" href="htmls/register.html">Sign in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Search</a>
+                            <a class="nav-link" href="htmls/search.html">Search</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                       </ul>
                         <div class="containerForm">
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 backgroundSearch" type="search" placeholder="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
+                            <form class="form-inline" id="searchField">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                            <button class="btn my-2 my-sm-0" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+                    </form>
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <a class="nav-link" href="#" class="text-right">Login</a>
                             </ul>
                         </div>
                     </div>
                 </nav>
+
             </header>
+
 
             <main>
 
+              <section class="descriptionDiv">
+
+                <p class="description">
+                    Welcome to TurboFlix! We provide movie's information for free. We also provide limitless streaming entertainment for thoose who are registered.
+                    Members can watch as much as they want, anytime, anywhere, on any internet-connected screen. 
+                    Members can play, pause and resume watching, all without commercials or commitments.
+                    You can find almost every movie, series or cartoon released in our Database and contribute with the missing ones.
+                    If you're looking for entertainment, don't forget to register.
+                </p>
+
+              </section>
+
+                  
               <section class="d-flex flex-wrap justify-content-center" id="showcase">
                 <div class="cards">
                     <img class="movieImg" src="imgs\about-time-poster.jpg" id="About_Time">
@@ -260,6 +278,7 @@
 
 
             <footer class="text-center footerColor">
+
                 <p class="h-50 d-inline-block">© COPYRIGHT 2020 by Fábio, Gabi, Ivan, Jéssica e Samantha</p>
 
             </footer>
