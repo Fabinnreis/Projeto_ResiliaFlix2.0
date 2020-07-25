@@ -50,7 +50,7 @@
 
 #formSearch {
     display: flex;
-    margin: 8% 5% 2% 5%;
+    margin: 6% 5% 2% 5%;
     justify-content: center;
 }
 
@@ -59,9 +59,14 @@
     font-size: 18px;
 }
 
+#movieName{
+    width: auto;
+    margin-left: 20px;
+}
+
 #nameMovie {
-    width: 25%;
-    margin: 0 1%
+    width: auto;
+    margin-left: 20px;
 }
 
 #btnSearch {
@@ -70,7 +75,7 @@
 }
 
 #reqMovies {
-    margin: 10% 30%;
+    margin: 5% 30%;
     width: 40%;
     border: solid lightgray;
     border-radius: 4px;
@@ -87,8 +92,9 @@
 }
 
 #trailerView{
-    width: 600px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
+    margin-top: 40px;
 }
 
 #poster{
@@ -171,3 +177,70 @@
     margin-top: 50px;
 }
 
+#btnSearchNav{
+    color: rgba(255,255,255,.5);
+  }
+  
+#btnSearchNav:hover{
+    color: whitesmoke;
+}
+
+#btnSearch{
+    color: rgba(255,255,255,.5);
+  }
+  
+#btnSearch:hover{
+    color: whitesmoke;
+}
+
+.background {
+    margin-top: 100px;
+    color: whitesmoke;
+	-webkit-animation: color-change-3x 2s linear infinite alternate both;
+	        animation: color-change-3x 2s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+  0% {
+    background: #0b132b;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #1c2541;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+
+.navColor {
+  background-color: #293361;
+}
+
+.backgroundSearch {
+ background-color: #5e709ab0; 
+}
+
+.containerForm {
+  display: flex;
+}
+
+.footerColor {
+  background-color: #293361;
+  color: #97ccf9;
+  padding-top: 15px;
+}
+
+#divTrailer{
+    text-align: center;
+}
