@@ -1,30 +1,97 @@
+.background {
+	-webkit-animation: color-change-3x 2s linear infinite alternate both;
+	        animation: color-change-3x 2s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+  0% {
+    background: #0b132b;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #1c2541;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+
+.navColor {
+  background-color: #293361;
+}
+
+.backgroundSearch {
+ background-color: #5e709ab0; 
+}
+
+#btnSearch{
+    color: rgba(255,255,255,.5);
+  }
+  
+#btnSearch:hover{
+    color: whitesmoke;
+}
+
 #contacts {
-    margin: 5% 0% 5% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 7% 5% 5% 5%;
 }
 #cardIndiv {
     display: flex;
-    margin: 1% 5% 1% 31%;
-    width: 35%;
-    border: solid lightgray 2px;
-    border-radius: 3px;
-}
-
-#cardIndiv div {
-    padding: 5px;
-    padding-left: 20px;
+    margin: 5% 1%;
+    position: relative;
+    overflow: hidden;
 }
 
 #photo {
-    width: 154px;
-    height: 154px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: 0 0%;
+    position: relative;
 }
 
-.card-title {
+.overlayItems {
+    width: 200px;;
+    height: 200px;
+    background-color: black;
+    color: whitesmoke;
     text-align: center;
-    padding: 2px;
+    overflow: hidden;
+    opacity: 0.8;
+    padding: 2%;
+    transition: 0.4s ease;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+  }
+  
+.infoContact{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
 }
+
+.nameContact {
+    font-size: 20px;
+}
+  
+#cardIndiv:hover .overlayItems{
+    width: 300%;
+  }
 
 #resilia {
     text-align: center;
@@ -32,6 +99,7 @@
 }
 
 #descr {
+    color: #97ccf9;
     font-size: 17px;
     font-weight: 500;
     font-style: italic;
@@ -39,5 +107,12 @@
 
 #hyperlink {
     text-decoration: none;
-    color: #000000;
+    font-weight: 500;
+    color: whitesmoke;
 }
+
+.footerColor {
+    background-color: #293361;
+    color: #97ccf9;
+    padding-top: 15px;
+  }

@@ -8,63 +8,112 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Contacts</title>
 </head>
-<body>
+
+<body class="background">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
+            <a class="navbar-brand" href="#">TurboFlix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="htmls/register.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="htmls/search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+                <div class="containerForm">
+                    <form class="form-inline" id="searchField">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                    <button class="btn my-2 my-sm-0" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+            </form>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <a class="nav-link" href="#" class="text-right">Login</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
     <section id="contacts">
         <div id="cardIndiv">
             <img src="../imgs\her-poster.jpg" id="photo">
-            <div>
-                <h5 class="card-title">Fabio Reis</h5>
-                <p class="card-text"><b><a href="https://github.com/Fabinnreis" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Fabio Reis</span> <br><br>
+                    <a href="https://github.com/Fabinnreis" id="hyperlink">GitHub</a> <br>
+                    <a href="" id="hyperlink">Instagram</a>
+                </p>
             </div>
         </div>
 
         <div id="cardIndiv">
             <img src="../imgs\her-poster.jpg" id="photo">
-            <div>
-                <h5 class="card-title">Gabrielle Sant'Anna</h5>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Gabrielle Sant'Anna</span> <br><br>
+                    <a href="https://github.com/GabSantAnna" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/g.a.bx" id="hyperlink">Instagram</a> 
+                </p>
             </div>
         </div>
 
         <div id="cardIndiv">
             <img src="../imgs\her-poster.jpg" id="photo">
-            <div>
-                <h5 class="card-title">Ivan Valverde</h5>
-                <p class="card-text"><b><a href="https://github.com/ivanvalverde" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Ivan Valverde</span> <br><br>
+                    <a href="https://github.com/ivanvalverde" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/ivanvalverde53" id="hyperlink">Instagram</a> 
+                </p>
             </div>
         </div>
 
         <div id="cardIndiv">
             <img src="../imgs\her-poster.jpg" id="photo">
-            <div>
-                <h5 class="card-title">Jéssica Pimentel</h5>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Jéssica Pimentel</span> <br><br>
+                    <div class="infosIndiv">
+                    <a href="https://github.com/jessikpimentel" id="hyperlink">GitHub</a> <br>
+                    <a href="" id="hyperlink">Instagram</a> 
+                    </div>
+                </p>
             </div>
         </div>
 
         <div id="cardIndiv">
             <img src="../imgs\IMG_0867.jpg" id="photo">
-            <div>
-            <h5 class="card-title">Samantha Cardoso</h5>
-            <p class="card-text"><b><a href="https://github.com/samanthacardosoo" id="hyperlink">GitHub</a></b></p>
-            <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-            <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Samantha Cardoso</span> <br><br>
+                    <a href="https://github.com/samanthacardosoo" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/sassacardosoo" id="hyperlink">Instagram</a> 
+                </p>
             </div>
         </div>
     </section>
 
-    <div id="resilia">
+    <section id="resilia">
         <p id="descr">Projeto desenvolvido por alunos da turma Resilia 2020 para conclusão de módulo.</h5>
         <p><a href="https://github.com/Fabinnreis/Projeto_ResiliaFlix2.0" id="hyperlink">Repositório do projeto</a></p>
         <p><a href="https://www.resilia.work/" id="hyperlink">Site da Resilia</a></p> 
-    </div>
+    </section>
+
+    <footer class="text-center footerColor">
+        <p class="h-50 d-inline-block">© COPYRIGHT 2020</p>
+    </footer>
 </body>
+
 </html>
