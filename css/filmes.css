@@ -90,3 +90,9 @@
 #trailer{
     margin-top: 50px;
 }
+
+.error{
+    margin-top: 10%;
+    font-size: 25px;
+    color: red;
+  }

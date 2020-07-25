@@ -1,6 +1,7 @@
 class AdressController {
-    constructor(){
-        throw new Error("This class can't instantiate new objects!")
+    
+    constructor() {
+        throw new Error("This class does not support object instancing.")
     }
 
     static fetchZipCode(url) {

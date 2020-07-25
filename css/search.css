@@ -244,3 +244,10 @@
 #divTrailer{
     text-align: center;
 }
+
+.error{
+    font-size: 25px;
+    color: red;
+}
+
+

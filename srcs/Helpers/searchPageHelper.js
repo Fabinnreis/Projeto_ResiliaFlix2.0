@@ -2,6 +2,7 @@ let btnSearch = document.querySelector("#btnSearch");
 let movieName = document.querySelector("#movieName");
 let searchField = document.querySelector ("#searchField");
 let nameMovie = document.querySelector ("#nameMovie");
+let errorReq = false;
 
 
 btnSearch.addEventListener("click", ()=>{
