@@ -3,12 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="../css/contatos.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto+Mono:wght@500&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contatos.css">
     <title>Contact</title>
 </head>
-<body>
+
+
+<body class="background">
+
+  <header>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
+        <img class="logo" src="../imgs\Logo_tv_sem_ResiliaFlix.png">
+        <a class="navbar-brand turbo" href="#">Turbo</a>
+        <a class="navbar-brand flix" href="#">Flix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse buttonsMenu" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="htmls/register.html">Sign in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="htmls/search.html">Search</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+            <div class="containerForm">
+                <form class="form-inline" id="searchField">
+                <input class="form-control mr-sm-2 backgroundSearch" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                <button class="btn my-2 my-sm-0 buttonSearch" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <a class="nav-link" href="#" class="text-right">Login</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
     <section class="d-flex flex-wrap justify-content-center" id="sectionContact">
         <!-- <div class="card mb-3" style="max-width: 540px;" id="cardContact">
             <div class="row no-gutters">
@@ -155,5 +199,10 @@
                 <p class="card-text"><a href="https://www.resilia.work/" id="hyperlink">Site da Resilia</a></p>            </div>
           </div>
     </section>
+    <footer class="text-center footer">
+
+        <p class="h-50 d-inline-block">© COPYRIGHT 2020</p>
+  
+    </footer>
 </body>
 </html>

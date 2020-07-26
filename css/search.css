@@ -1,3 +1,75 @@
+.background {
+    padding-top: 56px;
+    color: whitesmoke;
+      -webkit-animation: color-change-3x 2s linear infinite alternate both;
+              animation: color-change-3x 2s linear infinite alternate both;
+  }
+  
+   @-webkit-keyframes color-change-3x {
+    0% {
+      background: #0b132b;
+    }
+    50% {
+      background: #101b3d;
+    }
+    100% {
+      background: #1b2541;
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: #0b132b;
+    }
+    50% {
+      background: #101b3d;
+    }
+    100% {
+      background: #1b2541;
+    }
+  }
+  
+  .navColor {
+    background-color: #293361;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .turbo {
+      font-family: 'Rowdies', cursive;   
+      margin-left: 5px;
+      margin-right: 0;
+  }
+  
+  .flix {
+    font-family: 'Rowdies:wght@700', cursive;
+    font-size: light 300;
+    padding-right: 28px;
+  }
+  
+  .backgroundSearch {
+   background-color: #fdfdffc7; 
+   height: 30px;
+   width: 25px;
+  }
+  
+.containerForm {
+    display: flex;
+  }
+  
+  .buttonSearch {
+    padding-left: 2px;
+  }
+  
+  .footer {
+    background-color: #293361;
+    color: #ffffff80;
+    padding-top: 15px;
+    position: absolute;
+    width:100%;
+  }
+  
 #lastUp {
     margin: 2% auto 2% auto;
 }
@@ -191,54 +263,6 @@
   
 #btnSearch:hover{
     color: whitesmoke;
-}
-
-.background {
-    margin-top: 100px;
-    color: whitesmoke;
-	-webkit-animation: color-change-3x 2s linear infinite alternate both;
-	        animation: color-change-3x 2s linear infinite alternate both;
-}
-
- @-webkit-keyframes color-change-3x {
-  0% {
-    background: #0b132b;
-  }
-  50% {
-    background: #101b3d;
-  }
-  100% {
-    background: #1c2541;
-  }
-}
-@keyframes color-change-3x {
-  0% {
-    background: #1c2541;
-  }
-  50% {
-    background: #101b3d;
-  }
-  100% {
-    background: #1c2541;
-  }
-}
-
-.navColor {
-  background-color: #293361;
-}
-
-.backgroundSearch {
- background-color: #5e709ab0; 
-}
-
-.containerForm {
-  display: flex;
-}
-
-.footerColor {
-  background-color: #293361;
-  color: #97ccf9;
-  padding-top: 15px;
 }
 
 #divTrailer{
