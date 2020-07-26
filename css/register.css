@@ -99,7 +99,7 @@
 .form-style-10 .inner-wrap{
 	width: 80%;
 	margin: 0 auto;
-	margin-bottom: 15px;
+	
 	
 }
 .form-style-10 .inner-wrap label{
@@ -150,13 +150,7 @@
 	padding: 8px;
 	margin-top: 5px;
 	margin-bottom: 10px;
-	border-radius: 6px;
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
-	border: 2px solid #fff;
-	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
-	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
-	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+
 }
 
 .form-style-10 .section{

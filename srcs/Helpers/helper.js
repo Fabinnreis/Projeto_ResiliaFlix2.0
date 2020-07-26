@@ -2,8 +2,8 @@ let email = document.querySelector("#cadastroUsu").elements[3];
 let validateEmail = document.querySelector("#cadastroUsu").elements[4];
 let password = document.querySelector("#cadastroUsu").elements[11];
 let validatePassword = document.querySelector("#cadastroUsu").elements[12];
-let zipCodeField = document.querySelector("#cadastroUsu").elements[5];
 let submitButton = document.querySelector("#cadastroUsu").elements[13];
+let zipCodeField = document.querySelector("#inputZipCode");
 let form = document.querySelector("#cadastroUsu");
 let blocker = document.querySelector("#blocker");
 let fecthButton = document.querySelector("#btnSearch");
@@ -13,9 +13,9 @@ let validacep = /^[0-9]{8}$/;
 
 
 bootstrapValidate('#inputNome', 'alpha:You can only input alphabetic characters');
-bootstrapValidate('#inputSobrenome', 'alpha:You can only input alphabetic characters');
 bootstrapValidate('#inputRg', 'numeric:Please only enter numeric characters!');
 bootstrapValidate('#inputRg', 'min:9:Enter at least 9 characters!');
+bootstrapValidate('#inputEmail', 'email:Enter a valid E-Mail Address!');
 bootstrapValidate('#inputConfirmaEmail', 'matches:#inputEmail:Your e-mails should match');
 bootstrapValidate('#inputPassword', 'min:8:Enter at least 8 characters!');
 bootstrapValidate('#retypePassword', 'matches:#inputPassword:Your passwords should match');
