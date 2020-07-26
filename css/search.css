@@ -61,12 +61,10 @@
 
 #movieName{
     width: auto;
-    margin-left: 20px;
 }
 
 #nameMovie {
     width: auto;
-    margin-left: 20px;
 }
 
 #btnSearch {
@@ -82,6 +80,11 @@
     padding: 30px 10px 30px 40px
 
 }
+
+.responsiveFlexContainer {
+    display: flex;
+    margin-left: 43px;
+  }
 
 #inputSuggestion {
     width: 70%;
@@ -251,3 +254,84 @@
 }
 
 
+@media (max-width: 576px){
+
+    .containerForm{
+      flex-direction: column-reverse;
+    }
+    .form-inline {
+      flex-flow: nowrap;
+    }
+
+
+    #lastUp {
+        margin: -8% auto 2% auto;
+      }
+
+    #carouselImgWoman{
+        object-fit: cover;
+        object-position: 0 100%;
+        height: 150px;
+        width: 100%;
+    }
+    
+    #carouselImgJoker{
+        object-fit: cover;
+        object-position: 0 65%;
+        height: 150px;
+        width: 100%;
+    }
+    
+    #carouselImgBohemian{
+        object-fit: cover;
+        object-position: 0 30%;
+        height: 150px;
+        width: 100%;
+    }
+    
+    #carouselImgGreatest{
+        object-fit: cover;
+        object-position: 0 55%;
+        height: 150px;
+        width: 100%;
+    }
+    
+    #carouselImgFord{
+        object-fit: cover;
+        object-position: 0 46%;
+        height: 150px;
+        width: 100%;
+    }
+    
+    #carouselImgUs{
+        object-fit: cover;
+        object-position: 0 85%;
+        height: 150px;
+        width: 100%;
+    }
+    
+    #formSearch {
+        flex-direction: column;
+        text-align: center;
+    }
+      
+    .responsiveFlexContainer {
+        display: flex;
+        align-self: center;
+    }
+    
+    #reqMovies {
+        padding: 25px 10px 30px 25px;
+        margin: 15%;
+        width: auto;
+
+      }
+    
+
+}
+
+  
+  /* @media (min-width: 768px) and (max-width: 991.98px) {
+    
+  
+  } */
