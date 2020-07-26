@@ -5,7 +5,8 @@ class MovieController {
     }
 
     static generateMovie(movieUrl) {
-        let printView = document.querySelector("#infoMovie")
+        let printView = document.querySelector("#infoMovie");
+        let footer = document.querySelector(".footerColor");
         let request = new XMLHttpRequest();
         request.open("GET", movieUrl);
         request.addEventListener("load",() => {
@@ -34,12 +35,22 @@ class MovieController {
                     printView.innerHTML = "We could not find what you were looking for in our database.";
                     printView.classList.add("error");
                     errorReq = true;
+
+                    if(movieRegExp.test(window.location.href)){
+                        footer.classList.add("fixed-bottom");
+                        printView.classList.add("marginView");
+                    }
                 }
 
             } else{
                 printView.innerHTML = "Bad bad Server.";
                 printView.classList.add("error");
                 errorReq = true;
+
+                if(movieRegExp.test(window.location.href)){
+                    footer.classList.add("fixed-bottom");
+                    printView.classList.add("marginView");
+                }
             }
         })
         request.send()

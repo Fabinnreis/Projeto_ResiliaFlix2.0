@@ -96,35 +96,79 @@
 .error{
     margin-top: 10%;
     font-size: 25px;
-    color: red;
+    color: red!important;
 }
 
 .background {
-	-webkit-animation: color-change-3x 2s linear infinite alternate both;
-	        animation: color-change-3x 2s linear infinite alternate both;
+    color: whitesmoke;
+    padding-top: 56px;
+    -webkit-animation: color-change-3x 2s linear infinite alternate both;
+            animation: color-change-3x 2s linear infinite alternate both;
 }
 
- @-webkit-keyframes color-change-3x {
-  0% {
+@-webkit-keyframes color-change-3x {
+0% {
     background: #0b132b;
-  }
-  50% {
+}
+50% {
     background: #101b3d;
-  }
-  100% {
-    background: #1c2541;
-  }
+}
+100% {
+    background: #1b2541;
+}
 }
 @keyframes color-change-3x {
-  0% {
-    background: #1c2541;
-  }
-  50% {
+0% {
+    background: #0b132b;
+}
+50% {
     background: #101b3d;
-  }
-  100% {
-    background: #1c2541;
-  }
+}
+100% {
+    background: #1b2541;
+}
+}
+
+.navColor {
+    background-color: #293361;
+}
+
+.logo {
+    height: 40px;
+}
+
+.turbo {
+    font-family: 'Rowdies', cursive;   
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.flix {
+    font-family: 'Rowdies:wght@700', cursive;
+    font-size: light 300;
+    padding-right: 28px;
+}
+
+.backgroundSearch {
+    background-color: #fdfdffc7; 
+    height: 30px;
+    width: 25px;
+}
+
+.containerForm {
+    display: flex;
+}
+
+.buttonSearch {
+    padding-left: 2px;
+}
+
+.footerColor {
+    background-color: #293361;
+    color: #ffffff80;
+    padding-top: 15px;
+    position: absolute;
+    width:100%;
 }
 
 #btnSearchNav{
@@ -135,21 +179,11 @@
     color: whitesmoke;
 }
 
-.navColor {
-    background-color: #293361;
-}
-
 main{
     margin-top: 100px;
 }
 
-.footerColor {
-    background-color: #293361;
-    color: #97ccf9;
-    padding-top: 15px;
-}
-
-.containerForm {
-    display: flex;
+.marginView{
+    margin-top: 250px!important;
 }
   

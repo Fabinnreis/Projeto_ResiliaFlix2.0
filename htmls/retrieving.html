@@ -18,18 +18,20 @@
             <header>
 
                 <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
-                    <a class="navbar-brand" href="#">TurboFlix</a>
+                    <img class="logo" src="../imgs\Logo_tv_sem_ResiliaFlix.png">
+                    <a class="navbar-brand turbo" href="#">Turbo</a>
+                    <a class="navbar-brand flix" href="#">Flix</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                   
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                           <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="register.html">Sign in</a>
+                          <a class="nav-link active" href="register.html">Sign up</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="search.html">Search</a>
@@ -40,11 +42,11 @@
                       </ul>
                         <div class="containerForm">
                             <form class="form-inline" id="searchField">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
-                            <button class="btn my-2 my-sm-0" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+                            <input class="form-control mr-sm-2 backgroundSearch" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                            <button class="btn my-2 my-sm-0 buttonSearch" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
                     </form>
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <a class="nav-link" href="#" class="text-right">Login</a>
+                                <a class="nav-link" href="#" class="text-right">Sign in</a>
                             </ul>
                         </div>
                     </div>
@@ -80,7 +82,7 @@
 
             <footer class="text-center footerColor fixed-bottom">
 
-                <p class="h-50 d-inline-block">© COPYRIGHT 2020 by Fábio, Gabi, Ivan, Jéssica e Samantha</p>
+                <p class="h-50 d-inline-block">© TURBOFLIX 2020 | This website is copyright free</p>
 
             </footer>
             
@@ -91,4 +93,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
         <script src="../srcs/Helpers/retrievingEmail.js"></script>
+        <script src="../srcs/Helpers/searchPageHelper.js"></script>
+        
     </html>
