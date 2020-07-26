@@ -21,6 +21,7 @@
 
 #infoMovie{
     text-align: center;
+    color: whitesmoke;
 }
 
 #mainInfoMovieDiv{
@@ -89,10 +90,66 @@
 
 #trailer{
     margin-top: 50px;
+    color: whitesmoke;
 }
 
 .error{
     margin-top: 10%;
     font-size: 25px;
     color: red;
+}
+
+.background {
+	-webkit-animation: color-change-3x 2s linear infinite alternate both;
+	        animation: color-change-3x 2s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+  0% {
+    background: #0b132b;
   }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #1c2541;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1c2541;
+  }
+}
+
+#btnSearchNav{
+    color: rgba(255,255,255,.5);
+}
+
+#btnSearchNav:hover{
+    color: whitesmoke;
+}
+
+.navColor {
+    background-color: #293361;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.footerColor {
+    background-color: #293361;
+    color: #97ccf9;
+    padding-top: 15px;
+}
+
+.containerForm {
+    display: flex;
+}
+  
