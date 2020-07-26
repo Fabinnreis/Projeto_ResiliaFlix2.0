@@ -5,23 +5,49 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="css/index.css">
-            <link rel="shortcut icon" href="imgs/favIcon.png">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/reset.css">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-            <title>ResiliaFlix Turbo</title>
+            <link rel="stylesheet" href="css/index.css">
+            <title>TurboFlix</title>
         </head>
 
 
-        <body class="">
+        <body class="background">
 
             <header>
 
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand">ResiliaFlix Turbo</a>
-                    <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
+                    <a class="navbar-brand" href="#">TurboFlix</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="htmls/register.html">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="htmls/search.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                      </ul>
+                        <div class="containerForm">
+                            <form class="form-inline" id="searchField">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                            <button class="btn my-2 my-sm-0" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
                     </form>
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <a class="nav-link" href="htmls/login.html" class="text-right">Login</a>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
 
             </header>
@@ -29,117 +55,229 @@
 
             <main>
 
-                <section class="d-flex flex-wrap justify-content-center position-relative">
+              <section class="descriptionDiv">
 
-                    <div class="hider">
-                        <section id="presentation">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                        </section>
-                        <section id="userRegister">
-                            <form id="cadastroUsu" validate>
-                                <!--Informações pessoais-->
-                                <div id="infos">
-                                    <!--Campo Nome-->
-                                    <div class="form-group">
-                                        <label for="inputNome">Nome</label>
-                                        <input type="text" class="form-control" id="inputNome" placeholder="Nome">
-                                    </div>
-                                    <!--Campo sobrenome-->
-                                    <div class="form-group">
-                                        <label for="inputNome">Sobrenome</label>
-                                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
-                                    </div>
-                                    <!--Campo de RG-->
-                                    <div class="form-group">
-                                        <label for="inputRg">RG</label>
-                                        <input type="text" class="form-control" id="inputRg" placeholder="RG">
-                                    </div>
-                                    <!--Campo de email-->
-                                    <div class="form-group">
-                                        <label for="inputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                                            placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <!--Campo  confirmaçãode email-->
-                                    <div class="form-group">
-                                        <label for="inputConfirmaEmail">Confirm address</label>
-                                        <input type="email" class="form-control" id="inputConfirmaEmail" aria-describedby="emailHelp"
-                                            placeholder="Confirm email">
-                                    </div>
-                            
-                                </div>
-                                <!--Informações de segurança-->
-                                <div id="infoSenha">
-                                    <!--Campo de senha-->
-                                    <div class="form-group">
-                                        <label for="inputPassword">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                    </div>
-                                    <!--Campo confirmação de senha-->
-                                    <div class="form-group">
-                                        <label for="retypePassword">Retype Password</label>
-                                        <input type="password" class="form-control" id="retypePassword" placeholder="Password">
-                                    </div>
-                                </div>
-                                <!--Informações de endereço-->
-                                <div id="infoEndereco">
-                                    <!--Campo de endereço-->
-                                    <div class="form-group">
-                                        <label for="inputCep">Cep</label>
-                                        <input type="number" class="form-control" id="inputCep" placeholder="Cep">
-                                    </div><br><br>
-                                    <div id="userAdress">
-                                        <div class="form-group">
-                                            <label for="inputLogradouro">Logradouro</label>
-                                            <input type="text" class="form-control" id="inputLogradouro" placeholder="Logradouro">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputComplemento">Complemento</label>
-                                            <input type="text" class="form-control" id="inputComplemento" placeholder="Complemento">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputBairro">Bairro</label>
-                                            <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputLocalidade">Localidade</label>
-                                            <input type="text" class="form-control" id="inputLocalidade" placeholder="Localidade">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputUf">Uf</label>
-                                            <input type="text" class="form-control" id="inputUf" placeholder="Uf">
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <!--Botão de envio-->
-                                <div id="btnCadastroForm"><button type="submit" class="btn btn-primary">Submit</button></div>
-                            </form>
-                        </section>
-                    </div>
-                    <img class="movieImg" src="imgs\about-time-poster.jpg">
-                    <img class="movieImg" src="imgs\annihilation-poster.jpg">
-                    <img class="movieImg" src="imgs\Avatar_poster.jpg">
-                    <img class="movieImg" src="imgs\frozen-2-poster.jpg">
-                    <img class="movieImg" src="imgs\grand_budapest_hotel_poster.jpg">
-                    <img class="movieImg" src="imgs\her-poster.jpg">
-                    <img class="movieImg" src="imgs\inception-poster.jpg">
-                    <img class="movieImg" src="imgs\Indiana_Jones_poster.jpg">
-                    <img class="movieImg" src="imgs\jaws-poster.jpg">
-                    <img class="movieImg" src="imgs\midsommar_poster.jpg">
-                    <img class="movieImg" src="imgs\Venom-poster.jpg">
-                    <img class="movieImg" src="imgs\wonder_poster.jpg">
+                <p class="description">
+                    Welcome to TurboFlix! We provide movie's information for free. We also provide limitless streaming entertainment for thoose who are registered.
+                    Members can watch as much as they want, anytime, anywhere, on any internet-connected screen. 
+                    Members can play, pause and resume watching, all without commercials or commitments.
+                    You can find almost every movie, series or cartoon released in our Database and contribute with the missing ones.
+                    If you're looking for entertainment, don't forget to register.
+                </p>
 
+              </section>
+
+                  
+              <section class="d-flex flex-wrap justify-content-center" id="showcase">
+                <div class="cards">
+                    <img class="movieImg" src="imgs\about-time-poster.jpg" id="About_Time">
+                    <div class="overlayItems" id="About_Time">
+                        <p class="movieInfo"> 
+                        <span class="title">About Time (2013)</span> <br><br>
+                        
+                        Runtime: 123 min<br>
+                        director: Richard Curtis<br><br>
+                        
+                        At the age of 21 Tim discovers he can travel in time and change what 
+                        happens and has happened in his own life. 
+                        His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.
+                        </p>
+                    </div>                
+                
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\annihilation-poster.jpg" id="Annihilation">
+                    <div class="overlayItems" id="Annihilation">
+                        <p class="movieInfo"> 
+                        <span class="title">Annihilation (2018)</span> <br><br>
+                        
+                        Runtime: 115 min<br>
+                        director: Alex Garland<br><br>
+                        
+                        A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply.
+                        </p>
+                    </div>                
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\Avatar_poster.jpg" id="Avatar">
+                    <div class="overlayItems" id="Avatar">
+                        <p class="movieInfo"> 
+                        <span class="title">Avatar (2009)</span> <br><br>
+                        
+                        Runtime: 162 min<br>
+                        director: James Cameron<br><br>
+                        
+                        A paraplegic Marine dispatched to the moon Pandora
+                         on a unique mission becomes torn between following his orders and
+                          protecting the world he feels is his home. <br><br>
+                          3 Oscars                      
+                        </p>
+                    </div>                
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\frozen-2-poster.jpg" id="Frozen_II">
+                    <div class="overlayItems" id="Frozen_II">
+                        <p class="movieInfo"> 
+                        <span class="title">Frozen ll (2019)</span> <br><br>
+                        
+                        Runtime: 103 min<br>
+                        director: Chris Buck, Jennifer Lee<br><br>
+                        
+                        Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, 
+                        autumn-bound forest of an enchanted land. 
+                        They set out to find the origin of Elsa's powers in order to save their kingdom.<br><br>
+
+                         1 Oscar nomination
+                        </p>
+                    </div>                
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\grand_budapest_hotel_poster.jpg" id="Grand_Budapest_Hotel">
+                    <div class="overlayItems" id="Grand_Budapest_Hotel" >
+                        <p class="movieInfo"> 
+                        <span class="title">The Grand Budapest Hotel(2014)</span><br><br>
+                        
+                        Runtime: 99 min<br>
+                        director: Wes Anderson<br><br>
+                        
+                        A writer encounters the owner of an aging high-class hotel,
+                        who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge.<br><br>
+
+                        4 Oscars
+                        </p>
+                    </div>                
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\her-poster.jpg" id="Her">
+                    <div class="overlayItems" id="Her">
+                        <p class="movieInfo"> 
+                        <span class="title">Her(2013)</span> <br><br>
+                        
+                        Runtime: 126 min<br>
+                        director: Spike Jonze<br><br>
+                        
+                        In a near future, 
+                        a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.<br><br>
+
+                        1 Oscar
+                        </p>
+                    </div>                
+                </div>
+                
+                <div class="cards">
+                    <img class="movieImg" src="imgs\inception-poster.jpg" id="Inception">
+                    <div class="overlayItems" id="Inception">
+                        <p class="movieInfo"> 
+                        <span class="title">Inception(2010)</span> <br><br>
+                        
+                        Runtime: 148 min<br>
+                        director:  Christopher Nolan<br><br>
+                        
+                        A thief who steals corporate secrets through the use of dream-sharing technology
+                         is given the inverse task of planting an idea into the mind of a C.E.O.<br><br>
+
+                         4 Oscars
+                        </p>
+                    </div>                                
+                </div>
+                
+                <div class="cards">
+                    <img class="movieImg" src="imgs\Indiana_Jones_poster.jpg" id="Indiana_Jones">
+                    <div class="overlayItems" id="Indiana_Jones">
+                        <p class="movieInfo"> 
+                        <span class="title">Indiana Jones and the Last Crusade(1989)</span> <br><br>
+                        
+                        Runtime: 127 min<br>
+                        director: Steven Spielberg<br><br>
+                        
+                        In 1938, after his father Professor Henry Jones, Sr. goes missing while pursuing the Holy Grail, 
+                        Professor Henry Jones, Jr. finds himself up against Adolf Hitler's Nazis again to stop them from obtaining its powers.<br><br>
+
+                        1 Oscar
+                        </p>
+                    </div>                
+                </div>
+                
+                <div class="cards">
+                    <img class="movieImg" src="imgs\jaws-poster.jpg" id="Jaws">
+                    <div class="overlayItems" id="Jaws">
+                        <p class="movieInfo"> 
+                        <span class="title">Jaws(1975)</span> <br><br>
+                        
+                        Runtime: 124 min<br>
+                        director: Steven Spielberg<br><br>
+                        
+                        When a killer shark unleashes chaos on a beach community,
+                         it's up to a local sheriff, a marine biologist, 
+                         and an old seafarer to hunt the beast down.<br><br>
+                         3 Oscars
+                        </p>
+                    </div>                
+
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\midsommar_poster.jpg" id="Midsommar">
+                    <div class="overlayItems" id="Midsommar">
+                        <p class="movieInfo"> 
+                        <span class="title">Midsommar(2019)</span> <br><br>
+                        
+                        Runtime: 148 min<br>
+                        director: Ari Aster<br><br>
+                        
+                        A couple travels to Sweden to visit a rural hometown's fabled mid-summer festival. 
+                        What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.
+                        </p>
+                    </div>                
+
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\Venom-poster.jpg" id="Venom">
+                    <div class="overlayItems" id="Venom"> 
+                        <p class="movieInfo"> 
+                        <span class="title">Venom(2018)</span> <br><br>
+                        
+                        Runtime: 112 min<br>
+                        director: Ruben Fleischer<br><br>
+                        
+                        A failed reporter is bonded to an alien entity, 
+                        one of many symbiotes who have invaded Earth. But the being takes a liking to Earth and decides to protect it.
+                        </p>
+                    </div>                
+
+                </div>
+
+                <div class="cards">
+                    <img class="movieImg" src="imgs\wonder_poster.jpg" id="Wonder">
+                    <div class="overlayItems" id="Wonder">
+                        <p class="movieInfo"> 
+                        <span class="title">Wonder(2017)</span> <br><br>
+                        
+                        Runtime: 113 min<br>
+                        director: Stephen Chbosky<br><br>
+                        
+                        Based on the New York Times bestseller, this movie tells the  inspiring story of August Pullman, 
+                        a boy with facial differences who enters the fifth grade,
+                         attending a mainstream elementary school for the first time.<br><br>
+
+                        1 Oscar nomination
+                        </p>
+                    </div>                
+                </div>
                 </section>
+
             </main>
 
 
-            <footer class="fixed-bottom bg-light text-center">
+            <footer class="text-center footerColor">
 
-                <p class="h-50 d-inline-block">© 2020 Infohub by Ivan, Gabi, Jéssica, Fábio e Samantha | This website is copyright free</p>
+                <p class="h-50 d-inline-block">© COPYRIGHT 2020 by Fábio, Gabi, Ivan, Jéssica e Samantha</p>
 
             </footer>
             
@@ -149,12 +287,5 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
-        <script src="srcs/models/EnderecoModel.js"></script>
-        <script src="srcs/models/UsuarioModel.js"></script>
-        <script src="srcs/views/EnderecoView.js"></script>
-        <script src="srcs/views/UsuarioView.js"></script>
-        <!--<script src="srcs/views/RegisterView.js"></script>-->
-        <script src="srcs/Controllers/UsuarioController.js"></script>
-        <script src="srcs/Controllers/EnderecoController.js"></script>
-        <script src="srcs/helper/helper.js"></script>
+        <script src="srcs/Helpers/main.js"></script>
     </html>
