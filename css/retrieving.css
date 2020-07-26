@@ -107,3 +107,45 @@
 #successErrorMsg{
     margin-bottom: 20px;
 }
+
+@media (max-width: 576px){
+
+  .containerForm{
+    flex-direction: column-reverse;
+  }
+  .form-inline {
+    flex-flow: nowrap;
+  }
+  #showcase{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainForm {
+    margin-top: 150px;
+  }
+
+  .formWidth {
+    width: 70%;
+  }
+
+  .formField {
+    width: 90%;
+  }
+
+  .recoveryMsg {
+    padding: 20px 10px 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .containerForm{
+    flex-direction: column-reverse;
+  }
+  .form-inline {
+    flex-flow: nowrap;
+  }
+
+
+}
