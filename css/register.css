@@ -151,9 +151,21 @@
     color: #fff;
 }
 @media (max-width: 576px){
+	.containerForm{
+		flex-direction: column-reverse;
+	}
+
+	.form-inline {
+		flex-flow: nowrap;
+	}
+
+	.backgroundSearch {
+		width: auto;
+	  }
 	.bg{
 		margin-top: 20%;
 		width: 90%;
+		margin-bottom: 86%;
 	}
 	.footerColor {
 		margin-top: 280px;
@@ -167,6 +179,7 @@
 		margin-right: 5%;
 	}
 }
+
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.bg{
 		margin-top: 15%;
