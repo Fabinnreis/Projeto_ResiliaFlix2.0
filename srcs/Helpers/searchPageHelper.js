@@ -7,7 +7,7 @@ let errorReq = false;
 
 btnSearch.addEventListener("click", ()=>{
     let movieUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=982c7993&t=${movieName.value}`;
-    let trailerUrl = `https://www.googleapis.com/youtube/v3/search?q="${movieName.value} trailer"${googleApiKey}`
+    let trailerUrl = `https://www.googleapis.com/youtube/v3/search?q="${movieName.value} trailer"&key=AIzaSyCRTOBtfGl9kRAnM4QLJ4pcF00Y1Bv9YfY`
 
     MovieController.generateMovie(movieUrl);
     TrailerController.generateTrailer(trailerUrl);

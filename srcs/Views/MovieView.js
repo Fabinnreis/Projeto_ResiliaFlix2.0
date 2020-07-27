@@ -1,4 +1,9 @@
 class MovieView {
+
+    constructor() {
+        throw new Error("This class does not support object instancing.")
+    }
+    
     static templateMovie(sendMovie) {
         return `
         <div id="mainInfoMovieDiv">

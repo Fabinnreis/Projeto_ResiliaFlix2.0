@@ -1,0 +1,23 @@
+#loginForm{
+    padding-top: 2%;
+    min-width: 300px;
+}
+#inputUser{
+    margin-bottom: 8%;
+}
+#sendEmail{
+    width: 50%;
+    margin-top: 8%;
+}
+#recoverPassword a{
+    list-style: none;
+    color: whitesmoke;
+}
+#recoverPassword{
+    width: 50%;
+}
+
+.marginDiv{
+    margin-top: 100px;
+    color: whitesmoke;
+}

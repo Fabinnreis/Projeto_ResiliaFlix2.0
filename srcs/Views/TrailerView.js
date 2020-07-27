@@ -1,6 +1,6 @@
 class TrailerView{
-    constructor(){
-        throw new Error ('Não precisa ser instanciado')
+    constructor() {
+        throw new Error("This class does not support object instancing.")
     }
     static trailerTemplate(trailer){
         return `<div id="divTrailer">
