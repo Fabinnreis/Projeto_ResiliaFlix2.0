@@ -186,4 +186,77 @@ main{
 .marginView{
     margin-top: 250px!important;
 }
+
+@media (max-width: 576px){
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+
+    .containerForm{
+      flex-direction: column-reverse;
+    }
+
+    .form-inline {
+      flex-flow: nowrap;
+    }
+
+    .backgroundSearch {
+        width: auto;
+    }
+
+    #formSearch {
+        flex-direction: column;
+        text-align: center;
+    }
+      
+
+    
+    #reqMovies {
+        padding: 25px 10px 30px 25px;
+        margin: 15%;
+        width: auto;
+
+    }
+      
+    #imdb {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mainInfoMovieDiv {
+        margin: 100px 15px 20px 40px;
+        flex-direction: column;
+    }
+
+
+
+    #movieContentDiv {
+        flex-direction: column;
+    }
+      
+    #movieContent {
+        text-align: left;
+        font-size: 20px;
+        height: auto;
+        margin: 20px;
+
+    }
+
+    .movieData {
+        padding-left: 0px;
+    }
+
+    #trailerView {
+        width: -webkit-fill-available;
+        height: 250px;
+        margin: 40px 10px;
+    }
+
+}
+
   
