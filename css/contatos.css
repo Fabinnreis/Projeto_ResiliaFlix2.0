@@ -65,8 +65,8 @@ padding-left: 2px;
 background-color: #293361;
 color: #ffffff80;
 padding-top: 15px;
-position: absolute;
 width:100%;
+bottom: 0;
 }
 
 #btnSearch{
