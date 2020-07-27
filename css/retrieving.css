@@ -1,0 +1,155 @@
+.background {
+  padding-top: 56px;
+	-webkit-animation: color-change-3x 2s linear infinite alternate both;
+	        animation: color-change-3x 2s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+  0% {
+    background: #0b132b;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1b2541;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #0b132b;
+  }
+  50% {
+    background: #101b3d;
+  }
+  100% {
+    background: #1b2541;
+  }
+}
+
+.navColor {
+  background-color: #293361;
+}
+
+.logo {
+  height: 40px;
+}
+
+.turbo {
+    font-family: 'Rowdies', cursive;   
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.flix {
+  font-family: 'Rowdies:wght@700', cursive;
+  font-size: light 300;
+  padding-right: 28px;
+}
+
+.backgroundSearch {
+  background-color: #fdfdffc7; 
+  height: 30px;
+  width: 25px;
+ }
+
+.containerForm {
+  display: flex;
+}
+
+.buttonSearch {
+  padding-left: 2px;
+}
+
+.footerColor {
+  background-color: #293361;
+  color: #ffffff80;
+  padding-top: 15px;
+  position: absolute;
+  width:100%;
+}
+
+
+#btnSearch{
+  color: rgba(255,255,255,.5);
+}
+
+#btnSearch:hover{
+  color: whitesmoke;
+}
+
+.mainForm{
+    color: whitesmoke;
+    margin-top: 150px;
+}
+
+.formField{
+    width: 150%;
+}
+
+.recoveryMsg{
+    max-width: 40ch;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.formWidth{
+    width: 30%;
+    height: auto;
+    background-color: #293361c9;
+}
+
+.sendButton{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#successErrorMsg{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px){
+
+  .containerForm{
+    flex-direction: column-reverse;
+  }
+  .form-inline {
+    flex-flow: nowrap;
+  }
+  #showcase{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .backgroundSearch {
+    width: auto;
+  }
+
+  .mainForm {
+    margin-top: 150px;
+  }
+
+  .formWidth {
+    width: 70%;
+  }
+
+  .formField {
+    width: 90%;
+  }
+
+  .recoveryMsg {
+    padding: 20px 10px 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .containerForm{
+    flex-direction: column-reverse;
+  }
+  .form-inline {
+    flex-flow: nowrap;
+  }
+
+
+}

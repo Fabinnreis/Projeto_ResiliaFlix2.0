@@ -1,0 +1,71 @@
+#loginForm{
+    padding-top: 2%;
+    min-width: 300px;
+}
+#inputUser{
+    margin-bottom: 8%;
+}
+#sendEmail{
+    width: 50%;
+    margin-top: 8%;
+}
+#signupBtn a{
+    list-style: none;
+    color: whitesmoke;
+}
+#signupBtn{
+    width: 50%;
+}
+
+.marginDiv{
+    margin-top: 100px;
+    color: whitesmoke;
+}
+.bg{
+    border: solid lightgray;
+}
+.input-container{
+    position:relative;
+    margin-bottom:25px;
+}
+.input-container label{
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:16px;
+    color:#fff;	
+    pointer-event:none;
+    transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+top:-12px;
+font-size:12px;
+
+}
+.input-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#loginForm{
+        padding-top: 2%;
+        width: 80%;
+    }
+}
