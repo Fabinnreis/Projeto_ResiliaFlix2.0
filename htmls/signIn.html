@@ -58,22 +58,23 @@
 
             <main class="marginDiv d-flex justify-content-center">
 
-                
+              <form id="loginForm" class="text-center bg formWidth">
+                <div class="section" id="item1">Sign in</div>
+                <div class="input-container">
+                  <input type="email" id="inputUser" required="">
+                  <label for="inputUser">User</label>
+                </div>
 
-                <form id="loginForm" class="text-center border formWidth">
-
-                    <div class="form-row d-flex justify-content-center">
-                      <div class="form-group col-md-6 d-flex align-items-center flex-column">
-                        <label for="inputEmail4">User</label>
-                            <input type="email" class="form-control formField" id="inputUser" placeholder="Enter user or e-mail adress">
-                        <label for="inputEmail4">Password</label>
-                            <input type="password" class="form-control formField" id="inputPassword" placeholder="Enter password">
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary sendButton" id="sendEmail">Login</button><br>
-                    <button type="submit" class="btn btn-primary sendButton" id="recoverPassword"><a href="retrieving.html">Recover password</a> </button>
-                    <p id="successErrorMsg"></p>
-                </form>
+                <div class="input-container">
+                  <input type="password" id="inputPassword" required="">
+                  <label for="inputPassword">Password</label>
+                </div>
+              
+                <button type="submit" class="btn btn-primary sendButton" id="sendEmail">Login</button><br>
+                <button type="submit" class="btn btn-primary sendButton" id="signupBtn"><a href="register.html">Sign Up</a> </button>
+                <br><a href="retrieving.html"><span>Recovery Password</span></a>
+                <p id="successErrorMsg"></p>
+              </form>
 
             </main>
 

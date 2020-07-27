@@ -1,13 +1,15 @@
-let email = document.querySelector("#registerUser").elements[2];
-let validateEmail = document.querySelector("#registerUser").elements[3];
-let password = document.querySelector("#registerUser").elements[10];
-let validatePassword = document.querySelector("#registerUser").elements[11];
-let submitButton = document.querySelector("#registerUser").elements[13];
-let zipCodeField = document.querySelector("#inputZipCode");
-let form = document.querySelector("#registerUser");
-let blocker = document.querySelector("#blocker");
-let fecthButton = document.querySelector("#btnSearch");
-let divForm = document.querySelector("#userRegister");
+let $ = document.querySelector.bind(document);
+let email = $("#registerUser").elements[2];
+let validateEmail = $("#registerUser").elements[3];
+let password = $("#registerUser").elements[10];
+let validatePassword = $("#registerUser").elements[11];
+let submitButton = $("#registerUser").elements[13];
+let zipCodeField = $("#inputZipCode");
+let form = $("#registerUser");
+let blocker = $("#blocker");
+let fecthButton = $("#btnSearch");
+let divForm = $("#userRegister");
+let btnRegisterSubmit = $("#btnRegisterSubmit");
 
 let validacep = /^[0-9]{8}$/;
 
@@ -47,3 +49,8 @@ validateEmail.addEventListener("change", function(){
         email.focus();
     }
 });
+
+btnRegisterSubmit.addEventListener("click", function(event){
+    event.preventDefault();
+    alert('Register successful');
+})
