@@ -1,10 +1,10 @@
-let email = document.querySelector("#cadastroUsu").elements[3];
-let validateEmail = document.querySelector("#cadastroUsu").elements[4];
-let password = document.querySelector("#cadastroUsu").elements[11];
-let validatePassword = document.querySelector("#cadastroUsu").elements[12];
-let submitButton = document.querySelector("#cadastroUsu").elements[13];
+let email = document.querySelector("#registerUser").elements[3];
+let validateEmail = document.querySelector("#registerUser").elements[4];
+let password = document.querySelector("#registerUser").elements[11];
+let validatePassword = document.querySelector("#registerUser").elements[12];
+let submitButton = document.querySelector("#registerUser").elements[13];
 let zipCodeField = document.querySelector("#inputZipCode");
-let form = document.querySelector("#cadastroUsu");
+let form = document.querySelector("#registerUser");
 let blocker = document.querySelector("#blocker");
 let fecthButton = document.querySelector("#btnSearch");
 let divForm = document.querySelector("#userRegister");
@@ -12,17 +12,17 @@ let divForm = document.querySelector("#userRegister");
 let validacep = /^[0-9]{8}$/;
 
 
-bootstrapValidate('#inputNome', 'alpha:You can only input alphabetic characters');
-bootstrapValidate('#inputRg', 'numeric:Please only enter numeric characters!');
-bootstrapValidate('#inputRg', 'min:9:Enter at least 9 characters!');
+bootstrapValidate('#inputName', 'alpha:You can only input alphabetic characters');
+bootstrapValidate('#inputId', 'numeric:Please only enter numeric characters!');
+bootstrapValidate('#inputId', 'min:9:Enter at least 9 characters!');
 bootstrapValidate('#inputEmail', 'email:Enter a valid E-Mail Address!');
-bootstrapValidate('#inputConfirmaEmail', 'matches:#inputEmail:Your e-mails should match');
+bootstrapValidate('#inputConfirmEmail', 'matches:#inputEmail:Your e-mails should match');
 bootstrapValidate('#inputPassword', 'min:8:Enter at least 8 characters!');
 bootstrapValidate('#retypePassword', 'matches:#inputPassword:Your passwords should match');
-bootstrapValidate('#inputLogradouro', 'alpha:You can only input alphabetic characters');
-bootstrapValidate('#inputBairro', 'alpha:You can only input alphabetic characters');
-bootstrapValidate('#inputLocalidade', 'alpha:You can only input alphabetic characters');
-bootstrapValidate('#inputUf', 'alpha:You can only input alphabetic characters');
+bootstrapValidate('#inputAdress', 'alpha:You can only input alphabetic characters');
+bootstrapValidate('#inputDistrict', 'alpha:You can only input alphabetic characters');
+bootstrapValidate('#inputLocality', 'alpha:You can only input alphabetic characters');
+bootstrapValidate('#inputState', 'alpha:You can only input alphabetic characters');
 
 
 zipCodeField.addEventListener("change",function(){

@@ -1,6 +1,6 @@
 class TrailerView{
     constructor(){
-        throw new Error ('Não precisa ser instanciado')
+        throw new Error ('No need to be instantiated')
     }
     static trailerTemplate(trailer){
         return `<div id="divTrailer">
