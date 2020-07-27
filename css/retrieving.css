@@ -121,6 +121,10 @@
     align-items: center;
   }
 
+  .backgroundSearch {
+    width: auto;
+  }
+
   .mainForm {
     margin-top: 150px;
   }

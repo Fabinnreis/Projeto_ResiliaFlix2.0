@@ -168,6 +168,10 @@
   .form-inline {
     flex-flow: nowrap;
   }
+
+  .backgroundSearch {
+    width: auto;
+}
   #showcase{
     flex-direction: column;
     align-items: center;
