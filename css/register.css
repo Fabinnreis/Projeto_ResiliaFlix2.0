@@ -99,7 +99,7 @@
 		left:0px;
 		font-size:16px;
 		color:#fff;	
-		pointer-event:none;
+		pointer-events:none;
 		transition: all 0.5s ease-in-out;
 	}
 	.input-container input{ 
@@ -142,7 +142,7 @@
 .carousel-item span{
 	background: #2A88AD;
 	padding: 5px 10px 5px 10px;
-	margin-right: 1%;
+	margin-right: 3%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
