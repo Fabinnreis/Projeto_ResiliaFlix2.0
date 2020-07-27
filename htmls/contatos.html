@@ -3,157 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="../css/contatos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contatos.css">
     <title>Contact</title>
 </head>
-<body>
-    <section class="d-flex flex-wrap justify-content-center" id="sectionContact">
-        <!-- <div class="card mb-3" style="max-width: 540px;" id="cardContact">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="imgs\her-poster.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Fábio Reis</h3>
-                <p class="card-text"><b><a href="https://github.com/Fabinnreis" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b>E-mail: </b></p>
+
+<body class="background">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navColor fixed-top">
+            <img class="logo" src="../imgs\Logo_tv_sem_ResiliaFlix.png">
+            <a class="navbar-brand turbo" href="#">Turbo</a>
+            <a class="navbar-brand flix" href="#">Flix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contatos.html">Contact</a>
+                </li>
+              </ul>
+                <div class="containerForm">
+                    <form class="form-inline" id="searchField">
+                    <input class="form-control mr-sm-2 backgroundSearch" type="search" placeholder="Search" aria-label="Search" id="nameMovie">
+                    <button class="btn my-2 my-sm-0 buttonSearch" type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+            </form>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <a class="nav-link" href="#" class="text-right">Sign in</a>
+                    </ul>
                 </div>
             </div>
-            </div>
-        </div>
-        
-        <div class="card mb-3" style="max-width: 540px;" id="cardContact">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="imgs\her-poster.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Gabrielle Santanna</h3>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b>E-mail: </b></p>
-                </div>
-            </div>
+        </nav>
+
+    </header>
+
+    <section id="contacts">
+        <div id="cardIndiv">
+            <img src="../imgs\fabio.jpg" id="photo">
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Fabio Reis</span> <br><br>
+                    <a href="https://github.com/Fabinnreis" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/fabinnreis" id="hyperlink">Instagram</a>
+                </p>
             </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 540px;" id="cardContact">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="imgs\her-poster.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Ivan Valverde</h3>
-                <p class="card-text"><b><a href="https://github.com/ivanvalverde" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b>E-mail: </b></p>
-                </div>
-            </div>
+        <div id="cardIndiv">
+            <img src="../imgs\gabi.jpg" id="photo">
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Gabrielle Sant'Anna</span> <br><br>
+                    <a href="https://github.com/GabSantAnna" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/g.a.bx" id="hyperlink">Instagram</a> 
+                </p>
             </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 540px;" id="cardContact">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="imgs\her-poster.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Jéssica Pimentel</h3>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b>E-mail: </b></p>
-                </div>
-            </div>
+        <div id="cardIndiv">
+            <img src="../imgs\ivan.jpg" id="photo">
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Ivan Valverde</span> <br><br>
+                    <a href="https://github.com/ivanvalverde" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/ivanvalverde53" id="hyperlink">Instagram</a> 
+                </p>
             </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 540px;" id="cardContact">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="imgs\her-poster.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Samantha Cardoso</h3>
-                <p class="card-text"><b><a href="https://github.com/samanthacardosoo" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>
-                </div>
-            </div>
+        <div id="cardIndiv">
+            <img src="../imgs\jessica.jpg" id="photo">
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Jéssica Pimentel</span> <br><br>
+                    <div class="infosIndiv">
+                    <a href="https://github.com/jessikpimentel" id="hyperlink">GitHub</a> <br>
+                    <a href="" id="hyperlink">Instagram</a> 
+                    </div>
+                </p>
             </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 540px;" id="cardContact">
-
-            
-                <div class="card-body">
-                <h3 class="card-title">Resilia</h3>
-                <p class="card-text">Projeto desenvolvido por alunos da turma Resilia 2020 para conclusão de módulo</p>
-                <p class="card-text"><a href="https://github.com/Fabinnreis/Projeto_ResiliaFlix2.0" id="hyperlink">Repositório do projeto</a></p>
-                <p class="card-text"><a href="https://www.resilia.work/" id="hyperlink">Site da Resilia</a></p>
-                </div>
-            
-            
-        </div> -->
-        <div class="card" id="cardContact">
-            <img src="../imgs\her-poster.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Fábio Reis</h5>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>fabioreisdoc@gmail.com</p>
-            </div>
-          </div>
-
-        <div class="card" id="cardContact">
-            <img src="../imgs\her-poster.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gabrielle Santanna</h5>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b></p>
+        <div id="cardIndiv">
+            <img src="../imgs\samantha.jpg" id="photo">
+            <div class="overlayItems">
+                <p class="infoContact">
+                    <span class="nameContact"> Samantha Cardoso</span> <br><br>
+                    <a href="https://github.com/samanthacardosoo" id="hyperlink">GitHub</a> <br>
+                    <a href="https://instagram.com/sassacardosoo" id="hyperlink">Instagram</a> 
+                </p>
             </div>
         </div>
-
-        <div class="card" id="cardContact">
-            <img src="../imgs\her-poster.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Ivan Valverde</h5>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>jessikppimentel@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="card" id="cardContact">
-            <img src="../imgs\her-poster.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Jéssica Pimentel</h5>
-                <p class="card-text"><b><a href="https://github.com/" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>ivanvalverde53@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="card" id="cardContact">
-            <img src="../imgs\her-poster.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Samantha Cardoso</h5>
-                <p class="card-text"><b><a href="https://github.com/samanthacardosoo" id="hyperlink">GitHub</a></b></p>
-                <p class="card-text"><b><a href="" id="hyperlink">Instagram</a></b></p>
-                <p class="card-text"><b>E-mail: </b>sassacardosoo@gmail.com</p>        
-            </div>
-        </div>
-
-        <div class="card" id="cardResilia">
-            <h5 class="card-header">Resília</h5>
-            <div class="card-body">
-                <p class="card-text">Projeto desenvolvido por alunos da turma Resilia 2020 para conclusão de módulo</p>
-                <p class="card-text"><a href="https://github.com/Fabinnreis/Projeto_ResiliaFlix2.0" id="hyperlink">Repositório do projeto</a></p>
-                <p class="card-text"><a href="https://www.resilia.work/" id="hyperlink">Site da Resilia</a></p>            </div>
-          </div>
     </section>
+
+    <section id="resilia">
+        <p id="descr">Projeto desenvolvido por alunos da turma Resilia 2020 para conclusão de módulo.</h5>
+        <p><a href="https://github.com/Fabinnreis/Projeto_ResiliaFlix2.0" id="hyperlink">Repositório do projeto</a></p>
+        <p><a href="https://www.resilia.work/" id="hyperlink">Site da Resilia</a></p> 
+    </section>
+
+    <footer class="text-center footerColor">
+
+        <p class="h-50 d-inline-block">© TURBOFLIX 2020 | This website is copyright free</p>
+
+    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+<script src="../srcs/Helpers/searchPageHelper.js"></script>
+
 </html>
