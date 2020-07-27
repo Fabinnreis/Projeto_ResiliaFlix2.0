@@ -19,9 +19,9 @@ searchField[1].addEventListener("click",() => {
     window.location.href = "filmes.html" + queryString;
 })
 
-nameMovie.addEventListener("keypress",(event) => {
+movieName.addEventListener("keypress",(event) => {
     if (event.keyCode === 13) {
-        searchField[1].click();
+        btnSearch.click();
         event.preventDefault();
     } 
 })
