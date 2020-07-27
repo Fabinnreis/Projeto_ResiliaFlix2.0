@@ -1,81 +1,178 @@
-#cadastroUsu{
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 100px;
+.background {
+	padding-top: 56px;
+		-webkit-animation: color-change-3x 2s linear infinite alternate both;
+				animation: color-change-3x 2s linear infinite alternate both;
+	}
+	
+	@-webkit-keyframes color-change-3x {
+	0% {
+		background: #0b132b;
+	}
+	50% {
+		background: #101b3d;
+	}
+	100% {
+		background: #1b2541;
+	}
+	}
+	@keyframes color-change-3x {
+	0% {
+		background: #0b132b;
+	}
+	50% {
+		background: #101b3d;
+	}
+	100% {
+		background: #1b2541;
+	}
+	}
+	
+	.navColor {
+	background-color: #293361;
+	}
+	
+	.logo {
+	height: 40px;
+	}
+	
+	.turbo {
+		font-family: 'Rowdies', cursive;   
+		margin-left: 5px;
+		margin-right: 0;
+	}
+	
+	.flix {
+	font-family: 'Rowdies:wght@700', cursive;
+	font-size: light 300;
+	padding-right: 28px;
+	}
+	
+	.backgroundSearch {
+	background-color: #fdfdffc7; 
+	height: 30px;
+	width: 25px;
+	}
+	
+	.containerForm {
+	display: flex;
+	}
+	
+	.buttonSearch {
+	padding-left: 2px;
+	}
+	
+	.footerColor {
+	background-color: #293361;
+	color: #ffffff80;
+	padding-top: 15px;
+	width:100%;
+	position: relative;
+	margin-top: 415px;
+	}
+	
+	#btnSearch{
+		color: rgba(255,255,255,.5);
+	  }
+	  
+	#btnSearch:hover{
+		color: whitesmoke;
+	}
+	.whitesmoke{
+		color: whitesmoke;
+	}
+	.bg{
+		background-color: #293361c9;
+		border: solid lightgray;
+    	border-radius: 4px;
+		margin-top: 5%;
+		width: 40%;
+	}
+
+	/**/
+	.input-container{
+		position:relative;
+		margin-bottom:25px;
+	}
+	.input-container label{
+		position:absolute;
+		top:0px;
+		left:0px;
+		font-size:16px;
+		color:#fff;	
+		pointer-event:none;
+		transition: all 0.5s ease-in-out;
+	}
+	.input-container input{ 
+	  border:0;
+	  border-bottom:1px solid #555;  
+	  background:transparent;
+	  width:100%;
+	  padding:8px 0 5px 0;
+	  font-size:16px;
+	  color:#fff;
+	}
+	.input-container input:focus{ 
+	 border:none;	
+	 outline:none;
+	 border-bottom:1px solid #e74c3c;	
+	}
+
+	.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
 }
-
-#infos{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #778899;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
+.flexNav{
+	width: 100px;
+	margin: 5% auto;
+	padding-left: 15px;
 }
-
-#infoSenha{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #778899;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
+.flexJustifyCenter{
+	display: flex;
+	justify-content: center;
 }
-
-#infoEndereco{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #778899;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
+.carousel-item .section{
+	font: normal 1.5em 'Bitter', serif;
+    color: #2A88AD;
+	margin-bottom: 5%;
+	margin-top: 2%;
+	
 }
-
-.form-group{
-    margin-left: 30px;
+.carousel-item span{
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	margin-right: 1%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 10px;
+    color: #fff;
 }
-
-#inputNome{
-    width: 200px;   
+@media (max-width: 576px){
+	.bg{
+		margin-top: 20%;
+		width: 90%;
+	}
+	.footerColor {
+		margin-top: 280px;
+	}
+	.carousel-item .section{
+		margin-bottom: 10%;
+		margin-top: 5%;
+		
+	}
+	.carousel-item span{
+		margin-right: 5%;
+	}
 }
-
-#inputSobrenome{
-    width: 400px;   
-} 
-
-#btnCadastroForm{
-    display: flex;
-    justify-content: center;    
-}
-
-#userAdress{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.carousel-indicators li{
-  border: 1px solid black;
-  color: black;
-  background-color: black;
-}
-
-#sec-controls{
-  display: flex;
-  width: 40%;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-#sec-controls li{
-  list-style: none;
-  width: 10%;
-  height: 30px;
-  text-align: center;
-}
-
-.formTitle{
-    color: #5BC0BE;
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.bg{
+		margin-top: 15%;
+		width: 80%;
+	}
+	.footerColor {
+		margin-top: 470px;
+	}
 }

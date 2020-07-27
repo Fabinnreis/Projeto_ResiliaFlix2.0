@@ -69,61 +69,6 @@
   width:100%;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  margin: 8px;
-  width: 19%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.movieImg{
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.overlayItems {
-  width: 0;
-  height: 100%;
-  margin: 0px 10px 0 10px;
-  background-color: black;
-  color: whitesmoke;
-  text-align: center;
-  overflow: hidden;
-  opacity: 0.8;
-  padding: 2%;
-  transition: 0.4s ease;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: -10%;
-  cursor: pointer;
-}
-
-.movieInfo{
-  margin: 8%;
-  color: white;
-  margin:  0px 14px 0px 10px;
-  position: absolute;
-  top: 10%;
-  left: 5%;
-}
-
-.title {
-  font-size: x-large;
-}
-
-.cards:hover .overlayItems{
-  width: 110%;
-}
-
-#showcase {
-  margin-top: 0;
-  margin-bottom: 40px;
-}
 
 #btnSearch{
   color: rgba(255,255,255,.5);
@@ -133,31 +78,34 @@
   color: whitesmoke;
 }
 
-.descriptionDiv {
-  height: 30%;
-  margin-top: 40px;
+.mainForm{
+    color: whitesmoke;
+    margin-top: 150px;
 }
 
-.descriptionDiv h2 {
-  text-align: center;
-  color: whitesmoke;
+.formField{
+    width: 150%;
 }
 
-.description{
-  font-size: 20px;
-  color: #97ccf9;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: justify;
-
+.recoveryMsg{
+    max-width: 40ch;
+    margin-bottom: 50px;
+    padding-top: 20px;
 }
 
-.topMovies {
-  color: whitesmoke;
-  margin: 0;
-  margin-left: 10%;
-  margin-top: 45px;
-  font-size: 1.4rem;
+.formWidth{
+    width: 30%;
+    height: auto;
+    background-color: #293361c9;
+}
+
+.sendButton{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#successErrorMsg{
+    margin-bottom: 20px;
 }
 
 @media (max-width: 576px){
@@ -168,25 +116,30 @@
   .form-inline {
     flex-flow: nowrap;
   }
-
-  .backgroundSearch {
-    width: auto;
-}
   #showcase{
     flex-direction: column;
     align-items: center;
   }
 
-  .cards{
+  .backgroundSearch {
+    width: auto;
+  }
+
+  .mainForm {
+    margin-top: 150px;
+  }
+
+  .formWidth {
     width: 70%;
   }
 
-  .movieInfo {
-    font-size: 14px;
+  .formField {
+    width: 90%;
   }
 
-  .title{
-    font-size: large;
+  .recoveryMsg {
+    padding: 20px 10px 10px;
+    text-align: center;
   }
 }
 
@@ -197,4 +150,6 @@
   .form-inline {
     flex-flow: nowrap;
   }
+
+
 }
