@@ -144,3 +144,17 @@ bottom: 0;
     font-weight: 500;
     color: whitesmoke;
 }
+
+@media (max-width: 576px){
+	.containerForm{
+		flex-direction: column-reverse;
+	}
+
+	.form-inline {
+		flex-flow: nowrap;
+	}
+
+	.backgroundSearch {
+		width: auto;
+      }
+}
