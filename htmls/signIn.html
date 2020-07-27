@@ -58,25 +58,23 @@
 
             <main class="marginDiv d-flex justify-content-center">
 
-                
+              <form id="loginForm" class="text-center bg formWidth">
+                <div class="section" id="item1">Sign in</div>
+                <div class="input-container">
+                  <input type="email" id="inputUser" required="">
+                  <label for="inputUser">User</label>
+                </div>
 
-                <form id="loginForm" class="text-center bg formWidth">
-
-                    
-                      <div class="input-container">
-                        <input type="email" id="inputUser" required="">
-                        <label for="inputUser">User</label>
-                      </div>
-                      <div class="input-container">
-                        <input type="password" id="inputPassword" required="">
-                        <label for="inputPassword">Password</label>
-                      </div>
-         
-                    <button type="submit" class="btn btn-primary sendButton" id="sendEmail">Login</button><br>
-                    <button type="submit" class="btn btn-primary sendButton" id="signupBtn"><a href="register.html">Sign Up</a> </button>
-                    <br><a href="retrieving.html"><span>Recovery Password</span></a>
-                    <p id="successErrorMsg"></p>
-                </form>
+                <div class="input-container">
+                  <input type="password" id="inputPassword" required="">
+                  <label for="inputPassword">Password</label>
+                </div>
+              
+                <button type="submit" class="btn btn-primary sendButton" id="sendEmail">Login</button><br>
+                <button type="submit" class="btn btn-primary sendButton" id="signupBtn"><a href="register.html">Sign Up</a> </button>
+                <br><a href="retrieving.html"><span>Recovery Password</span></a>
+                <p id="successErrorMsg"></p>
+              </form>
 
             </main>
 
