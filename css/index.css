@@ -121,7 +121,7 @@
 }
 
 #showcase {
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
@@ -133,9 +133,14 @@
   color: whitesmoke;
 }
 
-.descriptionDiv{
+.descriptionDiv {
   height: 30%;
-  margin-top: 100px;
+  margin-top: 40px;
+}
+
+.descriptionDiv h2 {
+  text-align: center;
+  color: whitesmoke;
 }
 
 .description{
@@ -145,6 +150,14 @@
   margin-right: 10%;
   text-align: justify;
 
+}
+
+.topMovies {
+  color: whitesmoke;
+  margin: 0;
+  margin-left: 10%;
+  margin-top: 45px;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 576px){
