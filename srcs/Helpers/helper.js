@@ -14,7 +14,7 @@ let btnRegisterSubmit = $("#btnRegisterSubmit");
 let validacep = /^[0-9]{8}$/;
 
 
-bootstrapValidate('#inputName', 'alpha:You can only input alphabetic characters');
+bootstrapValidate('#inputName', 'regex:^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,8}$:Enter a valid name');
 bootstrapValidate('#inputId', 'numeric:Please only enter numeric characters!');
 bootstrapValidate('#inputId', 'min:9:Enter at least 9 characters!');
 bootstrapValidate('#inputEmail', 'email:Enter a valid E-Mail Address!');

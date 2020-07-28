@@ -2,6 +2,9 @@ let btnSearch = document.querySelector("#btnSearch");
 let movieName = document.querySelector("#movieName");
 let searchField = document.querySelector ("#searchField");
 let nameMovie = document.querySelector ("#nameMovie");
+let suggestOne = document.querySelector ("#inputSuggestion");
+let suggestTwo = document.querySelector ("#inputSuggestion2");
+let btnSuggest = document.querySelector ("#btnSuggestion");
 let errorReq = false;
 
 
@@ -24,4 +27,12 @@ movieName.addEventListener("keypress",(event) => {
         btnSearch.click();
         event.preventDefault();
     } 
+})
+
+btnSuggest.addEventListener("click", ()=>{
+    if((suggestOne != "") || (suggestTwo != "")){
+        suggestOne.value = "";
+        suggestTwo.value = "";
+        alert("Thank you for your contribution!");
+    }
 })
