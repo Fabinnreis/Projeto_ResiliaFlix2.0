@@ -1,4 +1,6 @@
 let $ = document.querySelector.bind(document);
+let nameUser = $("#registerUser").elements[0];
+let idUser = $("#registerUser").elements[1];
 let email = $("#registerUser").elements[2];
 let validateEmail = $("#registerUser").elements[3];
 let password = $("#registerUser").elements[10];
@@ -51,6 +53,10 @@ validateEmail.addEventListener("change", function(){
 });
 
 btnRegisterSubmit.addEventListener("click", function(event){
-    event.preventDefault();
-    alert('Register successful');
+    if((nameUser.value == "") || (idUser.value == "") || ( email.value == "") || (password.value == "") || (zipCodeField.value == "")){
+        event.preventDefault();
+        alert("Make sure to fill all fields")
+    } else{
+        alert('Register successful');
+    }
 })
